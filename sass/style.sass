@@ -64,7 +64,7 @@ body
 	opacity: 1
 
 .page-top
-	background: rgba(0,0,0,.5)
+	background: rgba(0,0,0,.7)
 	-webkit-transition: all .7s ease
 	-o-transition: all .7s ease
 	transition: all .7s ease
@@ -255,6 +255,8 @@ h1
 	background-color: #fff
 
 .formhead
+	padding-left: 40px
+	background: url('../img/ico-form.png') no-repeat 0 50%
 	font-family: "RobotoBold"
 	margin-bottom: 30px
 	text-align: left
@@ -420,9 +422,9 @@ h1
 
 .adv-block
 	img
-		-webkit-transition: all .3s ease
-		-o-transition: all .3s ease
-		transition: all .3s ease
+		-webkit-transition: all .3s ease .3s
+		-o-transition: all .3s ease .3s
+		transition: all .3s ease .3s
 	&:hover
 		img
 			-webkit-transform: scale(1.2)
@@ -434,6 +436,26 @@ h1
 	display: inline-block
 	font-weight: bold
 	font-style: italic
+
+.selectize-control.single .selectize-input:after
+	border: none
+	background: url('../img/dropdown.svg') no-repeat 100% 50%
+	width: 9px
+	height: 5px
+
+.selectize-control.single .selectize-input:after
+	border: none
+	background: url(../img/dropdown.svg) no-repeat 100% 50%
+	width: 9px
+	height: 5px
+	margin: 0
+
+.selectize-control.single .selectize-input.dropdown-active:after
+	margin: 0
+	-webkit-transform: rotate(180deg)
+	-ms-transform: rotate(180deg)
+	-o-transform: rotate(180deg)
+	transform: rotate(180deg)
 
 /* Preloader styles */
 
