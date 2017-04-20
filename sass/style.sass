@@ -65,11 +65,10 @@ body
 
 .page-top
 	background: rgba(0,0,0,.5)
-	padding-top: 80px
 	-webkit-transition: all .7s ease
 	-o-transition: all .7s ease
 	transition: all .7s ease
-	
+
 .logo
 	font-family: "RobotoBold"
 	font-size: 18px
@@ -87,10 +86,6 @@ body
 		color: #fff
 
 .main-header_wrap
-	position: absolute
-	top: 0
-	right: 0
-	left: 0
 	width: 100%
 	z-index: 10
 	border-bottom: 2px solid rgba(255,255,255,.1)
@@ -98,32 +93,28 @@ body
 	-o-transition: all .7s ease
 	transition: all .7s ease
 
-.page-top.shrink-first
-	.main-header_wrap
-		top: -100%
-
-.page-top.shrink
-	.main-header_wrap
-		position: fixed
-		top: 0
-		right: 0
-		left: 0
-		background-color: rgba(255,255,255,1)
-		top: 0
+.main-header_wrap.second-header
+	position: fixed
+	top: -100%
+	right: 0
+	left: 0
+	background-color: rgba(255,255,255,1)
+	color: #000
+	.logo
 		color: #000
 	.main-nav
-		ul
-			li
-				a
-					color: #000
-					margin: 0
-			.main-nav_reg-link
-				a
-					color: #fff
-					margin: 12px 0
-	.main-header
-		.logo
-			color: #000
+		li
+			a
+				color: #000
+				margin: 0
+		.main-nav_reg-link
+			a
+				color: #fff
+				margin: 12px 0
+
+.page-top.shrink
+	.main-header_wrap.second-header
+		top: 0
 
 .main-header
 	display: -webkit-flex
@@ -384,9 +375,65 @@ h1
 	-o-justify-content: space-between
 	justify-content: space-between
 
+.advantages-wrap
+	background-color: #fafafa
+	border: 2px solid #c9c9c9
+	border-top: none
+	padding: 60px 0
+	margin-bottom: 60px
 
+.advantages
+	background-color: #fff
+	margin-top: 60px
+	padding: 80px 
+	text-align: center
+	position: relative
+	&:before
+		content: ''
+		display: block
+		position: absolute
+		top: -11px
+		left: 13px
+		background: url("../img/pattern.svg") repeat 5px 0
+		height: 11px
+		width: 100%
+	&:after
+		content: ''
+		display: block
+		position: absolute
+		top: 0
+		right: -11px
+		background: url("../img/pattern.svg") repeat 5px 0
+		height: 100%
+		width: 12px
+	.adv-block
+		padding: 0 30px
+	img
+		display: block
+		margin: 0 auto 30px
+	h3
+		display: inline-block
+		margin-bottom: 15px
+	p
+		font-size: 12px
+		display: inline-block
 
+.adv-block
+	img
+		-webkit-transition: all .3s ease
+		-o-transition: all .3s ease
+		transition: all .3s ease
+	&:hover
+		img
+			-webkit-transform: scale(1.2)
+			-ms-transform: scale(1.2)
+			-o-transform: scale(1.2)
+			transform: scale(1.2)
 
+.strong-italic
+	display: inline-block
+	font-weight: bold
+	font-style: italic
 
 /* Preloader styles */
 
