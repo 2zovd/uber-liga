@@ -854,7 +854,7 @@ $('select').selectize({
       {value: "ZAZ Chance", name: "ZAZ Chance" },
       {value: "ZAZ Forza", name: "ZAZ Forza" },
       {value: "ZAZ Sens", name: "ZAZ Sens" },
-      {value: "ZAZ Vida", name: "ZAZ Vida" }
+      {value: "ZAZ Vida", name: "ZAZ Vida" } 
   ],
   labelField: 'name',
   searchField: ['name'],
