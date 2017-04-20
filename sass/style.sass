@@ -65,10 +65,14 @@ body
 
 .page-top
 	background: rgba(0,0,0,.5)
-
+	padding-top: 80px
+	-webkit-transition: all .7s ease
+	-o-transition: all .7s ease
+	transition: all .7s ease
+	
 .logo
 	font-family: "RobotoBold"
-  font-size: 18px
+	font-size: 18px
 	text-transform: uppercase
 	color: #fff
 	font-size: 20px
@@ -82,25 +86,31 @@ body
 	&:focus
 		color: #fff
 
-.main-header_wrap,
-.main-header_wrap-second,
+.main-header_wrap
+	position: absolute
+	top: 0
+	right: 0
+	left: 0
 	width: 100%
 	z-index: 10
 	border-bottom: 2px solid rgba(255,255,255,.1)
-	-webkit-transition: all .8s ease
-	-o-transition: all .8s ease
-	transition: all .8s ease
+	-webkit-transition: all .7s ease
+	-o-transition: all .7s ease
+	transition: all .7s ease
 
-.main-header_wrap-second
-	position: fixed
-	top: -100%
-	left: 0
-	right: 0
+.page-top.shrink-first
+	.main-header_wrap
+		top: -100%
 
-.main-header_wrap-second.shrink
-	background-color: rgba(255,255,255,1)
-	top: 0
-	color: #000
+.page-top.shrink
+	.main-header_wrap
+		position: fixed
+		top: 0
+		right: 0
+		left: 0
+		background-color: rgba(255,255,255,1)
+		top: 0
+		color: #000
 	.main-nav
 		ul
 			li

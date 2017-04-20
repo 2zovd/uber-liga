@@ -14,13 +14,21 @@ $(document).ready(function() {
 */
 
 $(document).on("scroll", function(){
-	if
+      if
     ($(document).scrollTop() > 100){
-	  $(".main-header_wrap-second").addClass("shrink");
+        $(".page-top").addClass("shrink-first");
+      }
+      else
+      {
+            $(".page-top").removeClass("shrink-first");
+      }
+	if
+    ($(document).scrollTop() > 300){
+	  $(".page-top").addClass("shrink");
 	}
 	else
 	{
-		$(".main-header_wrap-second").removeClass("shrink");
+	     $(".page-top").removeClass("shrink");
 	}
 });
 
