@@ -864,7 +864,7 @@ $('select').selectize({
       }
   }
 });
-
+/*
 //E-mail Ajax Send
 $("form.callback").submit(function() { //Change
 	var th = $(this);
@@ -881,7 +881,7 @@ $("form.callback").submit(function() { //Change
 	});
 	return false;
 });
-
+*/
 
 
 
