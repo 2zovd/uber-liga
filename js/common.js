@@ -15,12 +15,12 @@ $(document).ready(function() {
 
 $(document).on("scroll", function(){
 	if
-    ($(document).scrollTop() > 50){
-	  $(".main-header_wrap").addClass("shrink");
+    ($(document).scrollTop() > 100){
+	  $(".main-header_wrap-second").addClass("shrink");
 	}
 	else
 	{
-		$(".main-header_wrap").removeClass("shrink");
+		$(".main-header_wrap-second").removeClass("shrink");
 	}
 });
 

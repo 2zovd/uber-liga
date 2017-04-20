@@ -65,7 +65,6 @@ body
 
 .page-top
 	background: rgba(0,0,0,.5)
-	padding-top: 80px
 
 .logo
 	font-family: "RobotoBold"
@@ -83,17 +82,38 @@ body
 	&:focus
 		color: #fff
 
-.main-header_wrap
-	position: fixed
-	top: 0
-	left: 0
-	right: 0
+.main-header_wrap,
+.main-header_wrap-second,
 	width: 100%
 	z-index: 10
 	border-bottom: 2px solid rgba(255,255,255,.1)
-	-webkit-transition: all .3s
-	-o-transition: all .3s
-	transition: all .3s
+	-webkit-transition: all .8s ease
+	-o-transition: all .8s ease
+	transition: all .8s ease
+
+.main-header_wrap-second
+	position: fixed
+	top: -100%
+	left: 0
+	right: 0
+
+.main-header_wrap-second.shrink
+	background-color: rgba(255,255,255,1)
+	top: 0
+	color: #000
+	.main-nav
+		ul
+			li
+				a
+					color: #000
+					margin: 0
+			.main-nav_reg-link
+				a
+					color: #fff
+					margin: 12px 0
+	.main-header
+		.logo
+			color: #000
 
 .main-header
 	display: -webkit-flex
@@ -201,15 +221,6 @@ body
 	&:active
 		color: #fff
 		background-color: #138ab0
-
-.main-header_wrap.shrink
-	background-color: rgba(0,0,0,.7)
-	border-bottom: none
-	.main-nav
-		ul
-			li
-				a
-					margin: 0
 
 .page-top_content
 	padding-top: 60px
