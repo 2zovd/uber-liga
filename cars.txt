@@ -1,0 +1,10 @@
+{
+    "courseSubject": "Accountancy",
+    "courseSubject": "American Studies",
+    "courseSubject": "Anatomy & Regenerative Biology",
+    "courseSubject": "Anesthesiology",
+    "courseSubject": "Anthropology",
+    "courseSubject": "Applied Science",
+    "courseSubject": "Arabic",
+    "courseSubject": "Art/Art History"
+}
