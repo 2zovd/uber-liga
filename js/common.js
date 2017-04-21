@@ -15,12 +15,12 @@ $(document).ready(function() {
 
 $(document).on("scroll", function(){
 	if
-    ($(document).scrollTop() > 50){
-	  $(".main-header_wrap").addClass("shrink");
+    ($(document).scrollTop() > 200){
+	  $(".page-top").addClass("shrink");
 	}
 	else
 	{
-		$(".main-header_wrap").removeClass("shrink");
+		$(".page-top").removeClass("shrink");
 	}
 });
 
@@ -135,7 +135,7 @@ $('select').selectize({
       {value: "Honda Pilot", name: "Honda Pilot" },
       {value: "Honda Ridgeline", name: "Honda Ridgeline" },
       {value: "Honda Stream", name: "Honda Stream" },
-			{value: "Cadillac BLS", name: "Cadillac BLS" },
+	{value: "Cadillac BLS", name: "Cadillac BLS" },
       {value: "Cadillac CTS", name: "Cadillac CTS" },
       {value: "Cadillac Escalade", name: "Cadillac Escalade" },
       {value: "Cadillac SRX", name: "Cadillac SRX" },
@@ -865,7 +865,7 @@ $('select').selectize({
   }
 });
 
-/*
+
 //E-mail Ajax Send
 $("form.callback").submit(function() { //Change
 	var th = $(this);
@@ -882,7 +882,7 @@ $("form.callback").submit(function() { //Change
 	});
 	return false;
 });
-*/
+
 
 
 
