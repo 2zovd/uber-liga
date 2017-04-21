@@ -18,6 +18,11 @@
 	<!-- iOS Safari -->
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 
+	<link rel="stylesheet" href="libs/bootstrap-grid/bootstrap-grid.css">
+	<link rel="stylesheet" href="libs/fontawesome/font-awesome.min.css">
+	<link rel="stylesheet" href="libs/selectize/css/selectize.css">	
+	<link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
 	
@@ -68,56 +73,53 @@
 		</div>
 
 		<div class="container">
-			<div class="row">
-				<div class="page-top_content">
+			<div class="row page-top_content">
 
-					<div class="col-md-6 col-sm-12 page-top_title">
-						<h1>Станьте водителем UBER в Харькове</h1>
-						<p>Легко и просто зарабатывайте на своём автомобиле до 4000грн/месяц в свободное время.</p>
-						<a href="#" class="main-btn">Стать водителем</a>
-					</div>
+				<div class="col-md-6 page-top_title">
+					<h1>Станьте водителем Uber в Харькове</h1>
+					<p>Легко и просто зарабатывайте на своем авто до 40 000 грн/месяц в свободное время с Uber Liga, официальным партнёром Uber в Украине.</p>
+					<a href="#" class="main-btn">Стать водителем</a>
+				</div>
 					
-					<div class="col-md-5">
-						<div class="page-top_form">
-							<form class="callback">
+				<div class="col-md-4 col-md-offset-2">
+					<div class="page-top_form">
+						<form class="callback">
 
-								<div class="success"><span>Спасибо, Ваша заявка принята.</span></div>
+							<div class="success"><span>Спасибо, Ваша заявка принята.</span></div>
 
-								<!-- Hidden Required Fields -->
-								<input type="hidden" name="project_name" value="UBER LIGA">
-								<input type="hidden" name="admin_email" value="dmy2zov@gmail.com">
-								<input type="hidden" name="form_subject" value="Регистрация водителя на сайте">
-								<!-- END Hidden Required Fields -->
-  	
-								<input type="hidden" name="Страница" value="">
+							<!-- Hidden Required Fields -->
+							<input type="hidden" name="project_name" value="UBER LIGA">
+							<input type="hidden" name="admin_email" value="dmy2zov@gmail.com">
+							<input type="hidden" name="form_subject" value="Регистрация водителя на сайте">
+							<!-- END Hidden Required Fields -->
+	
+							<input type="hidden" name="Страница" value="">
 
-								<div class="formhead">Станьте водителем</div>  
-								<!-- <p>Оставьте заявку и мы перезвоним вам в течение 15 минут.</p> -->
-								
-								<div class="form-row floated-form">
-									<input type="text" name="Имя" placeholder="Имя" required>
-									<input type="text" name="Фамилия" placeholder="Фамилия" required>
-								</div>
-								<div class="form-row">
-									<input type="tel" name="Телефон" placeholder="Телефон" id="phone" required>
-								</div>
-								<div class="form-row">
-									<input type="text" name="E-mail" placeholder="E-mail">
-								</div>
-								<div class="form-row form-select">
-									<select id="select-car" name="Марка автомобиля">
-										<option disabled selected value>Марка автомобиля</option>
-										<option>Марка автомобиля</option>
-									</select>
-									<input type="text" name="Год выпуска" placeholder="Год выпуска">
-								</div>
+							<div class="formhead">Станьте водителем</div>  
+							<!-- <p>Оставьте заявку и мы перезвоним вам в течение 15 минут.</p> -->
+							
+							<div class="form-row floated-form">
+								<input type="text" name="Имя" placeholder="Имя" required>
+								<input type="text" name="Фамилия" placeholder="Фамилия" required>
+							</div>
+							<div class="form-row">
+								<input type="tel" name="Телефон" placeholder="Телефон" id="phone" required>
+							</div>
+							<div class="form-row">
+								<input type="text" name="E-mail" placeholder="E-mail">
+							</div>
+							<div class="form-row form-select">
+								<select id="select-car" name="Марка автомобиля">
+									<option disabled selected value>Марка автомобиля</option>
+									<option>Марка автомобиля</option>
+								</select>
+								<input type="text" name="Год выпуска" placeholder="Год выпуска">
+							</div>
 
-								<button class="main-btn">Зарегистрироваться</button>
+							<button class="main-btn">Зарегистрироваться</button>
 
-							</form>
-						</div>
+						</form>
 					</div>
-
 				</div>
 			</div>
 		</div>
@@ -126,46 +128,103 @@
 
 	<main class="main">
 
-			<div class="advantages-wrap">
-				<div class="container advantages">
-					<div class="row">
-						<div class="col-md-4 adv-block">
-							<img src="img/high-income.svg" width="72" height="72" alt="Высокий доход">
-							<h3>Высокий доход</h3>
-							<p>Месячный доход водителей UBER до 50 000 грн. Гарантированная выплата на банковскую карту четко в срок.</p>
-						</div>
-						<div class="col-md-4 adv-block">
-							<img src="img/free-schedule.svg" width="72" height="72" alt="Свободный график">
-							<h3>Свободный график</h3>
-							<p>Вы работаете тогда, когда хотите. Достаточно лишь включить приложение на смартфоне. Вы <span class="strong-italic">не обязаны</span> делать минимальное количество поездок.</p>
-						</div>
-						<div class="col-md-4 adv-block">
-							<img src="img/constant-orders.svg" width="72" height="72" alt="Постоянные заказы">
-							<h3>Постоянные заказы</h3>
-							<p>Количество клиентов UBER в Украине растет с каждым днем. Заказов много и хватает всем. Пассажиры воспитанные и корректные.</p>
-						</div>
+		<section class="benefits-wrap">
+			<div class="container benefits">
+				<div class="row">
+					<div class="col-md-4 benefits-block">
+						<img src="img/high-income.svg" width="72" height="72" alt="Высокий доход">
+						<h3>Высокий доход</h3>
+						<p>Месячный доход водителей UBER до 50 000 грн. Гарантированная выплата на банковскую карту четко в срок.</p>
+					</div>
+					<div class="col-md-4 benefits-block">
+						<img src="img/free-schedule.svg" width="72" height="72" alt="Свободный график">
+						<h3>Свободный график</h3>
+						<p>Вы работаете тогда, когда хотите. Достаточно лишь включить приложение на смартфоне. Вы <span class="strong-italic">не обязаны</span> делать минимальное количество поездок.</p>
+					</div>
+					<div class="col-md-4 benefits-block">
+						<img src="img/constant-orders.svg" width="72" height="72" alt="Постоянные заказы">
+						<h3>Постоянные заказы</h3>
+						<p>Количество клиентов UBER в Украине растет с каждым днем. Заказов много и хватает всем. Пассажиры воспитанные и корректные.</p>
 					</div>
 				</div>
 			</div>
+		</section>
 
+		<section class="about-wrap">
+			<div class="about">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 about-title">
+							<h2>Что такое Uber</h2>
+							<strong>Uber – это не такси в классическом понимании. Uber – это сервис подвоза пассажиров.</strong>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="about-box">
+								<span><strong>69$</strong>млрд</span>
+								<p>Оценочная стоимость Uber на начало 2017 года. Это самый дорогой стартап в мире за всю историю.</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="about-box">
+								<span><strong>577</strong>городов</span>
+								<p>В 75 странах - покрывает сервис Uber в мире. В Украине Uber стал доступен в 2016 году.</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="about-box">
+								<span><strong>20$</strong>млрд</span>
+								<p>Составил объем заказов Uber в мире в 2016 году. Количество заказов постоянно увеличивается.</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="about-box">
+								<span><strong>126%</strong></span>
+								<p>Рост заказов Uber в 2016 году (более, чем в 2 раза). В 2017 этот рост должен продолжиться.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</section>
+
+		<section class="container initial-demands">
+			<div class="row">
+				<div class="col-md-3 col-md-offset-2 initial-demands_img">
+					<img src="img/phone.png" alt="Приложение Uber для смартфона" width="218" height="430">
+				</div>
+				<div class="col-md-4 col-md-offset-2">
+					<div class="initial-demands_block">
+						<span class="sup-heading">Требования</span>
+						<h2>Что нужно, чтобы начать</h2>
+						<ul>
+							<li>
+								<strong>Автомобиль</strong>
+								<p>Подойдёт как свой так и арендованный. Требования к автомобилю можно посмотреть здесь.</p>
+							</li>
+							<li>
+								<strong>Автомобиль</strong>
+								<p>Подойдёт как свой так и арендованный. Требования к автомобилю можно посмотреть здесь.</p>
+							</li>
+							<li>
+								<strong>Автомобиль</strong>
+								<p>Подойдёт как свой так и арендованный. Требования к автомобилю можно посмотреть здесь.</p>
+							</li>
+						</ul>
+					</div>
+				</div>	
+			</div>
+		</section>
 
 
 
 	</main>
 
-
-	<link rel="stylesheet" href="libs/bootstrap-grid/bootstrap-grid.css">
-	<link rel="stylesheet" href="libs/fontawesome/font-awesome.min.css">
-	<link rel="stylesheet" href="libs/selectize/css/selectize.css">	
-	<link rel="stylesheet" href="css/style.css">
-
-	<script
-  src="https://code.jquery.com/jquery-2.2.4.min.js"
-  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-  crossorigin="anonymous"></script>
+	<script src="libs/jquery/jquery.min.js"></script>
 	<script src="libs/selectize/js/standalone/selectize.min.js"></script>
-	<script src="libs/parallax/parallax.min.js"></script>
 	<script src="libs/masked-input/masked-input.js"></script>
+	<script src="libs/parallax/parallax.min.js"></script>
 	<script src="js/common.js"></script>
 
 </body>
