@@ -61,7 +61,9 @@ body
 	line-height: 1.1
 	overflow-x: hidden
 	opacity: 1
+	color: $main-text
 
+/* page-top / header styles */
 .page-top
 	min-height: 540px
 	-webkit-transition: all .7s ease
@@ -97,13 +99,15 @@ body
 	right: 0
 	left: 0
 	background-color: rgba(255,255,255,1)
-	color: #000
+	color: $main-text
+	border-bottom: none
+	box-shadow: 0 1px 5px rgba(0,0,0,.07)
 	.logo
-		color: #000
+		color: $main-text
 	.main-nav
 		li
 			a
-				color: #000
+				color: $main-text
 				margin: 0
 		.main-nav_reg-link
 			a
@@ -373,6 +377,11 @@ h1
 	-o-justify-content: space-between
 	justify-content: space-between
 
+/* main content styles*/
+.main
+	border: 1px solid #c9c9c9
+	border-top: none
+
 .benefits-wrap
 	background-color: #fafafa
 	padding: 70px 0
@@ -508,9 +517,13 @@ h2
 		line-height: 13px
 
 .sup-heading
+	display: block
+	font-family: "RobotoRegular"
+	color: #666768
 	font-size: 10px
+	line-height: 12px
 	text-transform: uppercase
-	margin-bottom: 22px
+	margin-bottom: 5px
 	padding: 0
 
 .about-wrap
@@ -528,12 +541,259 @@ h2
 	padding-top: 70px
 	padding-bottom: 100px
 	h2
-		color: #000
+		color: $main-text
 
 .initial-demands_img
+	position: relative
+	&:before
+		content: ''
+		display: block
+		position: absolute
+		z-index: -1
+		width: 400px
+		height: 400px
+		border-radius: 500px
+		background-color: #fafafa
+		top: 50%
+		left: 50%
+		-webkit-transform: translate(-50%, -50%)
+		-ms-transform: translate(-50%, -50%)
+		-o-transform: translate(-50%, -50%)
+		transform: translate(-50%, -50%)
+	img
+		width: 85%
+		height: auto
+		margin: 0 auto
+
+.initial-demands_block
+	margin-top: 70px
+
+.paragraph-box
+	margin-bottom: 30px
+	p
+		display: block
+		font-size: 12px
+		line-height: 14px
+		padding-left: 25px
+
+h4
+	display: block
+	font-family: "RobotoRegular"
+	margin-bottom: 12px
+	font-size: 14px
+	line-height: 16px
+	position: relative
+
+h4.marked-heading
+	padding-left: 25px
+	&:before
+		content: ''
+		display: block
+		position: absolute
+		background: $theme-color
+		width: 14px
+		height: 2px
+		left: 0
+		top: 50%
+		-webkit-transform: translateY(-50%)
+		-ms-transform: translateY(-50%)
+		-o-transform: translateY(-50%)
+		transform: translateY(-50%)
+
+.become-driver_box
+	padding-top: 30px
+	position: relative
+	color: $main-text
+	margin-bottom: 50px
+	&:before
+		position: absolute
+		top: -10px
+		left: 15px
+		content: ''
+		display: block
+		width: 20px
+		height: 20px
+		border-radius: 100%
+		background-color: #fff
+		border: 2px solid $theme-color
+
+.become-driver_box.become-driver_second
+	&:before
+		border: 4px solid $theme-color
+
+.become-driver_box.become-driver_third
+	&:before
+		background-color: $theme-color
+
+a.context-link
+	display: inline-block
+	padding-bottom: 1px
+	color: unset
+	background: -webkit-linear-gradient(left, #ccc, #ccc) no-repeat 50% 100%
+	background: -moz-linear-gradient(left, #ccc, #ccc) no-repeat 50% 100%
+	background: -ms-linear-gradient(left, #ccc, #ccc) no-repeat 50% 100%
+	background: -o-linear-gradient(left, #ccc, #ccc) no-repeat 50% 100%
+	background: linear-gradient(left, #ccc, #ccc) no-repeat 50% 100%
+	background-size: 100% 1px
+	-webkit-transition: all .15s ease
+	-o-transition: all .15s ease
+	transition: all .15s ease
+	&:hover
+		background-size: 0 1px
+
+.become-driver
+	h2
+		margin-bottom: 60px
+		color: $main-text
+
+.become-driver_hold
+	width: 100%
+	border-top: 2px solid $theme-color
+	margin-bottom: 50px
+
+.vantage-hold
+	padding: 70px 0 40px 0
+	background-color: #fafafa
+	h2
+		text-align: center
+		color: $main-text
+		margin-bottom: 40px
+
+.vantage-box
+	padding: 30px
+	margin-bottom: 30px
+	background-color: #fff
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	-webkit-justify-content: space-between
+	-moz-justify-content: space-between
+	-ms-justify-content: space-between
+	-o-justify-content: space-between
+	justify-content: space-between
+	-ms-align-items: center
+	align-items: center
+	-webkit-flex-direction: row
+	-moz-flex-direction: row
+	-ms-flex-direction: row
+	-o-flex-direction: row
+	flex-direction: row
+	img
+		margin-right: 30px
+
+.loyalty-hold
+	padding: 70px 0 85px
+	h2
+		margin-bottom: 45px
+		text-align: center
+		color: $main-text
+
+.bonus-card
+	margin: 0 auto
+	display: block
+	width: 230px
+	height: 140px
+	background-color: $theme-color
+	border-radius: 10px
+	text-transform: uppercase
+	font-size: 15px
+	line-height: 17px
+	color: #fff
+	letter-spacing: 1.5px
+	position: relative
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	-webkit-justify-content: center
+	-moz-justify-content: center
+	-ms-justify-content: center
+	-o-justify-content: center
+	justify-content: center
+	-ms-align-items: center
+	align-items: center
+	.card-num
+		position: absolute
+		bottom: 14px
+		left: 0
+		width: 100%
+		text-align: center
+		font-family: "RobotoRegular"
+		font-size: 10px
+		color: #ffff
+	span
+		font-family: "RobotoLight"
+	strong
+		font-family: "RobotoRegular"
+
+.card-hold
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		top: 50%
+		left: 50%
+		-webkit-transform: translate(-50%, -50%)
+		-ms-transform: translate(-50%, -50%)
+		-o-transform: translate(-50%, -50%)
+		transform: translate(-50%, -50%)
+		display: block
+		width: 200px
+		height: 200px
+		background-color: #fafafa
+		border-radius: 100%
+		z-index: -1
+
+.reviews-hold
+	background-color: #fafafa
+	padding: 70px 0 100px
+	width: 100%
+	overflow: hidden
+
+.review-photo
 	img
 		width: 100%
 		height: auto
+
+.reviews-wrap
+	max-width: 1920px
+	margin: 0 auto
+
+.review-content
+	margin-left: 10%
+	width: 85%
+	float: right
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	-webkit-justify-content: space-between
+	-moz-justify-content: space-between
+	-ms-justify-content: space-between
+	-o-justify-content: space-between
+	justify-content: space-between
+	-ms-align-items: stretch
+	align-items: stretch
+	.review-text
+		padding-right: 20%
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		-ms-align-items: center
+		align-items: center
+		-webkit-flex-direction: row
+		-moz-flex-direction: row
+		-ms-flex-direction: row
+		-o-flex-direction: row
+		flex-direction: row
+		background-color: #fff
+		padding-left: 60px
 
 /* Preloader styles */
 
