@@ -18,17 +18,17 @@
 	<!-- iOS Safari -->
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 
-	<link rel="stylesheet" href="libs/bootstrap-grid/bootstrap-grid.css">
-	<link rel="stylesheet" href="libs/fontawesome/font-awesome.min.css">
-	<link rel="stylesheet" href="libs/selectize/css/selectize.css">	
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="libs/bootstrap-grid/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="libs/selectize/css/selectize.min.css">	
+	<link rel="stylesheet" href="libs/slick/slick.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
 
 </head>
 <body>
 	
 	<div class="preloader"><div class="pulse"></div></div>
 
-	<section class="page-top" data-parallax="scroll" data-image-src="img/bg-main.jpg">
+	<section class="page-top">
 
 		<div class="main-header_wrap">
 			<div class="container">
@@ -78,7 +78,7 @@
 				<div class="col-md-6 page-top_title">
 					<h1>Станьте водителем Uber в Харькове</h1>
 					<p>Легко и просто зарабатывайте на своем авто до 40 000 грн/месяц в свободное время с Uber Liga, официальным партнёром Uber в Украине.</p>
-					<a href="#" class="main-btn">Стать водителем</a>
+					<a href="#" class="main-btn main-btn-small">Стать водителем</a>
 				</div>
 					
 				<div class="col-md-4 col-md-offset-2">
@@ -116,7 +116,7 @@
 								<input type="text" name="Год выпуска" placeholder="Год выпуска">
 							</div>
 
-							<button class="main-btn">Зарегистрироваться</button>
+							<button class="main-btn main-btn-small">Зарегистрироваться</button>
 
 						</form>
 					</div>
@@ -154,10 +154,12 @@
 			<div class="about">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-12 about-title">
+						<div class="col-md-12 about-title reverse">
 							<h2>Что такое Uber</h2>
 							<strong>Uber – это не такси в классическом понимании. Uber – это сервис подвоза пассажиров.</strong>
 						</div>
+					</div>
+					<div class="row">
 						<div class="col-md-3 col-sm-6">
 							<div class="about-box">
 								<span><strong>69$</strong>млрд</span>
@@ -218,8 +220,10 @@
 		<section class="become-driver">
 			<div class="container">
 				<div class="row">
-					<span class="sup-heading">Шаги</span>
-					<h2>Как стать водителем</h2>
+					<div class="col-md-12 heading-group">
+						<span class="sup-heading">Шаги</span>
+						<h2>Как стать водителем</h2>
+					</div>
 				</div>
 			</div>
 			<div class="become-driver_hold">
@@ -277,6 +281,8 @@
 							</div>
 						</div>
 					</div>
+				</div>
+				<div class="row">
 					<div class="col-md-4">
 						<div class="vantage-box">
 							<img src="img/discount.svg" alt="Программа лояльности Uber Liga" width="35" height="35">
@@ -304,7 +310,6 @@
 							</div>
 						</div>
 					</div>	
-
 				</div>
 			</div>
 		</section>
@@ -324,42 +329,157 @@
 						</div>
 					</div>
 					<div class="col-md-6 col-md-offset-1">
-						<div class="col-md-6">
-							<div class="paragraph-box">
-								<h4 class="marked-heading">Топливная программа</h4>
-								<p>Скидка на топливо:</p>
-								<p>- 3 грн/л на бензин/дизель;</p>
-								<p>- 1 грн/л газа.</p>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="paragraph-box">
+									<h4 class="marked-heading">Топливная программа</h4>
+									<p>Скидка на топливо:</p>
+									<p>- 3 грн/л на бензин/дизель;</p>
+									<p>- 1 грн/л газа.</p>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="paragraph-box">
+									<h4 class="marked-heading">Мобильная связь</h4>
+									<p>Специальный Uber - пакет для наших водитaелей. Большое количество интернета и минут для общения.</p>
+								</div>
 							</div>
 						</div>
-						<div class="col-md-6">
-							<div class="paragraph-box">
-								<h4 class="marked-heading">Мобильная связь</h4>
-								<p>Специальный Uber - пакет для наших водитaелей. Большое количество интернета и минут для общения.</p>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="paragraph-box">
+									<h4 class="marked-heading">Запчасти</h4>
+									<p>Специальные цены от нашего партнера, интернет-магазина <a class="context-link" href="https://www.autoklad.ua/" target="_blank">www.autoklad.ua</a>.</p>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="paragraph-box">
+									<h4 class="marked-heading">Газовые установки</h4>
+									<p>Скидка на установку газобалонного оборудования.</p>
+								</div>
 							</div>
 						</div>
-						<div class="col-md-6">
-							<div class="paragraph-box">
-								<h4 class="marked-heading">Запчасти</h4>
-								<p>Специальные цены от наших партнеров, интернет-магазина...</p>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="paragraph-box">
+									<h4 class="marked-heading">Мойка</h4>
+									<p>Специальные цены для водителей компании Uber Liga.</p>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="paragraph-box">
+									<h4 class="marked-heading">Страхование</h4>
+									<p>Скидки до 30% на различные виды страхования, дополнительные привелегии и бонусы.</p>
+								</div>
 							</div>
 						</div>
-						<div class="col-md-6">
-							<div class="paragraph-box">
-								<h4 class="marked-heading">Газовые установки</h4>
-								<p>Скидка на установку газобалонного оборудования.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="review-wrap">
+			<h2>Отзывы</h2>
+			<div class="review-slider">
+				<div class="review-slide_holder first-slide">
+					<div class="review-slide">
+						<div class="review-img">
+							<img src="img/photo-01.jpg" width="270px" height="270px" alt="Дмитрий автолюбитель">
+						</div>
+						<div class="review-text">
+							<p>Я выбрал Убер в качестве подработки. У меня есть основное место работы, но есть и свободное время. Я перевожу пассажиров по пути на работу и некоторое время после работы, иногда по выходным. делаю это в те дни и то время, когда мне это удобно. могу проехаться всего 2-3 раза в неделю. Uber - это очень удобно и современно. С помощью Убера я зарабатываю деньги на путешествия. <span>Дмитрий, 25 лет</span></p>
+						</div>
+					</div>
+				</div>
+				<div class="review-slide_holder middle-slide">
+					<div class="review-slide">
+						<div class="review-img">
+							<img src="img/photo-01.jpg" width="270px" height="270px" alt="Дмитрий автолюбитель">
+						</div>
+						<div class="review-text">
+							<p>Я попал под сокращение на работе. Возможно, руководство считает, что я уже не молод и не так эффективен - не мне их судить. Пока искал новую работу и ходил по собеседованиям - решил подработать в Убере. По началу казалось, что все сложно и было немного страшно, потому что я никогда не был таксистом. Но с Убером все просто и понятно + безопасно. В основном все рассчеты за поездки идут по безналичному расчету. Приехал я за пассажиром, забрал, привез, он ушел, а мне зачислились деньги. Я всегда вижу свой заработок. Пока новую работу не нашел, но езжу с Убером уже больше. На сегодня мой заработок больше, чем на прошлом месте работы. <span>Виктор, 53 года</span></p>
+						</div>
+					</div>
+				</div>
+				<div class="review-slide_holder last-slide">
+					<div class="review-slide">
+						<div class="review-img">
+							<img src="img/photo-01.jpg" width="270px" height="270px" alt="Дмитрий автолюбитель">
+						</div>
+						<div class="review-text">
+							<p>Наверное у нас в стране принято считать, что женщин таксистов не бывает. И наверное, это правда. Но Убер - это не такси. И я не таксистка. У меня нет мужа, но есть ребенок. Я перевожу пассажиров в среднем по 2 часа в день (час-полтора до работы и час после) в свободное от основной работы время. Это позволяет мне получать неплохую прибавку к моему ежемесячному доходу. Пассажиры, которые пользуются сервисом Убер - очень воспитанные и порядочные. Я могу точно сказать, что Uber - это не такси, которое было у нас раньше.<span>Марина, 35 лет</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="car-req">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-11 col-md-offset-1 heading-group">
+						<span class="sup-heading">Шаги</span>
+						<h2>Как стать водителем</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 car-req_block">
+						<div class="row">
+							<div class="col-md-12">
+								<img src="img/uberselect.svg" width="570" height="786" alt="UberSelect">
 							</div>
 						</div>
-						<div class="col-md-6">
-							<div class="paragraph-box">
-								<h4 class="marked-heading">Мойка</h4>
-								<p>Специальные цены для водителей компании Uber Liga.</p>
+						<div class="row">
+							<div class="row-col-md-12 car-req_content">
+								<h4 class="marked-heading">UberX</h4>
+								<p>Авто эконом и стандарт класса от 2001 года выпуска четырех- или пяти- дверной модификации, чистая и без наклеек, рекламы или шашечек такси.</p>
+								<p>Примеры авто: Daweoo Lanos, Chevrolet Lacetti, Hyinday Accent и другие авто этого класса.</p>
+								<p><a class="context-link" href="#">Полный список допустимых авто.</a></p>
 							</div>
 						</div>
-						<div class="col-md-6">
-							<div class="paragraph-box">
-								<h4 class="marked-heading">Страхование</h4>
-								<p>Скидки до 30% на различные виды страхования, дополнительные привелегии и бонусы.</p>
+					</div>
+
+					<div class="col-md-6 car-req_block">
+						<div class="row">
+							<div class="col-md-12">
+								<img src="img/uberselect.svg" width="570" height="786" alt="UberSelect">
+							</div>
+						</div>
+						<div class="row">
+							<div class="row-col-md-12 car-req_content">
+								<h4 class="marked-heading">UberSelect</h4>
+								<p>Автомобиль иномарка комфорт и бизнес класса от 2005 года выпуска четырех- или пяти- дверная без наклеек, рекламы или шашечек такси.</p>
+								<p>Примеры авто: Toyota Camry, Skoda Superb, VW Passat, Mazda 6, Honda Accord и другие авто этого класса.</p>
+								<p><a class="context-link" href="#">Полный список допустимых авто.</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="driver-req">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-sm-12 col-xs-12">
+						<div class="driver-req_box">
+							<div class="row">
+								<div class="col-md-12 col-sm-12 col-xs-12 heading-group">
+									<span class="sup-heading">Условия</span>
+									<h2>Требования к водителю</h2>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12 col-sm-12 col-xs-12">
+									<ul>
+										<li class="marked-heading">C личным или арендованным авто</li>
+										<li class="marked-heading">Водительский стаж от 3х лет</li>
+										<li class="marked-heading">Гражданин Украины или вид на жительство</li>
+										<li class="marked-heading">Действующая страховка ОСАГО (автогражданка) на авто</li>
+										<li class="marked-heading">Наличие мобильного телефона-смартфона или планшета с 3G мобильным интернетом</li>
+									</ul>
+									<a href="#" class="main-btn main-btn-small">Стать водителем</a>
+								</div>
 							</div>
 						</div>
 
@@ -368,25 +488,50 @@
 			</div>
 		</section>
 
-		<section class="reviews-hold">
-			<div class="reviews-wrap">
-				<div class="review-content">
-					<img src="img/photo-01.jpg" width="270px" height="270px" alt="Дмитрий автолюбитель">
-					<div class="review-text">
-						<p>Я выбрал Убер в качестве подработки. У меня есть основное место работы, но есть и свободное время. Я перевожу пассажиров по пути на работу и некоторое время после работы, иногда по выходным. делаю это в те дни и то время, когда мне это удобно. могу проехаться всего 2-3 раза в неделю. Uber - это очень удобно и современно. С помощью Убера я зарабатываю деньги на путешествия. <span>Дмитрий, Toyota Camry</span></p>
+		<section class="contact">
+			<div class="container">
+				<div class="col-md-5 col-sm-5 col-md-offset-4 contact-content">
+					<div class="row contact-row">
+						<div class="col-md-6 col-sm-6">
+							<span class="contact-title">Телефон</span>
+							<strong class="contact-info">097-690-03-07</strong>
+							<strong class="contact-info">050-690-03-07</strong>
+							<strong class="contact-info">093-690-03-07</strong>
+						</div>
+						<div class="col-md-6 col-sm-6">
+							<span class="contact-title">E-main</span>
+							<strong class="contact-info">info@uberliga.ua</strong>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 col-sm-12">
+							<span class="contact-title">Адрес</span>
+							<strong class="contact-info">ул.Плехановская, 65</strong>
+							<span>(Южная трибуна, сектор №30-35) ст. Метро Спортивная.</span>
+						</div>
 					</div>
 				</div>
 			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="map">
 
+							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1078.7291362059948!2d36.26207316601686!3d49.980145782206776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1492907988736" frameborder="0" style="border:0" allowfullscreen></iframe>
+							
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
 
 	</main>
 
 	<script src="libs/jquery/jquery.min.js"></script>
-	<script src="libs/selectize/js/standalone/selectize.min.js"></script>
-	<script src="libs/masked-input/masked-input.js"></script>
-	<script src="libs/parallax/parallax.min.js"></script>
-	<script src="js/common.js"></script>
+	<script async src="libs/selectize/js/standalone/selectize.min.js"></script>
+	<script async src="libs/masked-input/masked-input.js"></script>
+	<script async src="libs/slick/slick.min.js"></script>
+	<script async src="js/common.js"></script>
 
 </body>
 </html>

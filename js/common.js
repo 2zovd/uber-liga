@@ -13,6 +13,14 @@ $(document).ready(function() {
 });
 */
 
+
+$(document).ready(function(){
+  $('.review-slider').slick({
+    arrows: true,
+    infinite: false
+  });
+});
+
 $(document).on("scroll", function(){
 	if
     ($(document).scrollTop() > 200){
@@ -882,8 +890,6 @@ $("form.callback").submit(function() { //Change
 	});
 	return false;
 });
-
-
 
 
 $(window).on('load', function() {
