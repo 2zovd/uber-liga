@@ -1,19 +1,4 @@
-/*
-$(document).ready(function() {
-
-    function heightDetect() {
-        $('.page-top').css('min-height', $(window).height());
-    };
-
-    heightDetect();
-    $(window).resize(function() {
-        heightDetect();
-    });
-
-});
-*/
-
-
+/* slick slider plug-in launcher */
 $(document).ready(function(){
   $('.review-slider').slick({
     arrows: true,
@@ -21,6 +6,14 @@ $(document).ready(function(){
   });
 });
 
+/*toggle menu*/
+$(".nav-btn").click(function() {
+      $(".nav-btn").toggleClass("active");
+      $(".main-header_wrap").toggleClass("active-header");
+});
+
+
+/*header on scroll script*/
 $(document).on("scroll", function(){
 	if
     ($(document).scrollTop() > 200){
@@ -32,21 +25,71 @@ $(document).on("scroll", function(){
 	}
 });
 
+$(document).on("scroll", function(){
+      if
+    ($(document).scrollTop() > 5){
+        $(".main-header_wrap.mobile-header").addClass("scrolled-header");
+      }
+      else
+      {
+            $(".main-header_wrap.mobile-header").removeClass("scrolled-header");
+      }
+});
+
+/* adding mask +38 to tel input */
 jQuery(function($){
    $("#phone").mask("+38 (999) 999-99-99");
 });
 
+//E-mail Ajax Send
+$("form.callback").submit(function() {
+	var th = $(this);
+	$.ajax({
+		type: "POST",
+		url: "mail.php", //Change
+		data: th.serialize()
+	}).done(function() {
+		$(th).find('.success').addClass('active').css("display", "flex").hide().fadeIn();
+		setTimeout(function() {
+			$(th).find('.success').removeClass('active').fadeOut();
+			th.trigger("reset");
+		}, 3000);
+	});
+	return false;
+});
+
+/* google maps api launcher */
+function initMap() {
+  var uberliga = {lat: 49.9801184, lng: 36.2619713};
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 16,
+    center: uberliga
+  });
+  var marker = new google.maps.Marker({
+    position: uberliga,
+    map: map
+  });
+}
+
+/* form validation plug-in */
+$("input, select, textarea").jqBootstrapValidation();
+
+/* animated scroll to section plug-in */
+$(".main-header .logo, .main-footer .logo, .footer-nav ul li a, .main-nav ul li a").mPageScroll2id();
+
+
+/* selectize script launcher / astyling and import data to select car form*/
 $('select').selectize({
-	create: true,
-	sortField: [
-	      {
-	          field: 'name',
-	          direction: 'asc'
-	      },
-	      {
-	          field: '$score'
-	      }
-	  ],
+      create: true,
+      sortField: [
+            {
+                field: 'name',
+                direction: 'asc'
+            },
+            {
+                field: '$score'
+            }
+        ],
   options: [
       {value: "Dodge Avenger", name: "Dodge Avenger" },
       {value: "Dodge Caliber", name: "Dodge Caliber" },
@@ -143,7 +186,7 @@ $('select').selectize({
       {value: "Honda Pilot", name: "Honda Pilot" },
       {value: "Honda Ridgeline", name: "Honda Ridgeline" },
       {value: "Honda Stream", name: "Honda Stream" },
-	{value: "Cadillac BLS", name: "Cadillac BLS" },
+      {value: "Cadillac BLS", name: "Cadillac BLS" },
       {value: "Cadillac CTS", name: "Cadillac CTS" },
       {value: "Cadillac Escalade", name: "Cadillac Escalade" },
       {value: "Cadillac SRX", name: "Cadillac SRX" },
@@ -873,24 +916,7 @@ $('select').selectize({
   }
 });
 
-
-//E-mail Ajax Send
-$("form.callback").submit(function() { //Change
-	var th = $(this);
-	$.ajax({
-		type: "POST",
-		url: "mail.php", //Change
-		data: th.serialize()
-	}).done(function() {
-		$(th).find('.success').addClass('active').css("display", "flex").hide().fadeIn();
-		setTimeout(function() {
-			$(th).find('.success').removeClass('active').fadeOut();
-			th.trigger("reset");
-		}, 3000);
-	});
-	return false;
-});
-
+/* preloader function */
 
 $(window).on('load', function() {
 	$('.preloader').delay(1000).fadeOut('slow');

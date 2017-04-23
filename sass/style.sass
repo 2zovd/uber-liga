@@ -58,6 +58,7 @@ body
 	font-family: "RobotoRegular"
 	font-size: $text-size
 	position: relative
+	min-width: 320px
 	line-height: 1.1
 	overflow-x: hidden
 	opacity: 1
@@ -142,9 +143,9 @@ body
 	width: 100%
 	z-index: 10
 	border-bottom: 2px solid rgba(255,255,255,.1)
-	-webkit-transition: all .7s ease
-	-o-transition: all .7s ease
-	transition: all .7s ease
+	-webkit-transition: all .5s ease
+	-o-transition: all .5s ease
+	transition: all .5s ease
 
 .main-header_wrap.second-header
 	position: fixed
@@ -185,6 +186,44 @@ body
 	-ms-align-items: center
 	align-items: center
 
+.main-nav_reg-link
+	margin-left: 10px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	-ms-align-items: stretch
+	align-items: stretch
+	-webkit-align-content: center
+	-moz-align-content: center
+	-ms-align-content: center
+	-o-align-content: center
+	align-content: center
+	a
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		-ms-align-items: center
+		align-items: center
+		-webkit-align-content: center
+		-moz-align-content: center
+		-ms-align-content: center
+		-o-align-content: center
+		align-content: center
+		color: #fff
+		text-transform: uppercase
+		padding: 0 15px
+		font-size: 10px
+		line-height: 1
+		text-align: center
+		position: relative
+		-webkit-transition: all .3s
+		-o-transition: all .3s
+		transition: all .3s
+		position: relative
 .main-nav
 	ul
 		display: -webkit-flex
@@ -849,6 +888,8 @@ a.context-link
 
 .review-img
 	width: 28%
+	max-height: 270px
+	overflow: hidden
 	img
 		width: 100%
 		height: auto
@@ -944,9 +985,9 @@ a.context-link
 
 .car-req_block
 	img
-		width: 100%
-		height: 100%
-		margin-bottom: 40px
+		width: 80%
+		height: auto
+		margin: 0 auto 40px
 	p
 		margin-bottom: 20px
 		padding-left: 25px
@@ -994,7 +1035,7 @@ a.context-link
 .contact-row
 	margin-bottom: 25px
 
-.map
+.map-holder
 	position: relative
 	&:before
 		content: ''
@@ -1018,6 +1059,9 @@ a.context-link
 		border: none
 		width: 100%
 		height: 400px
+.map
+	width: 100%
+	height: 400px
 
 .app
 	padding: 50px 0
@@ -1071,8 +1115,18 @@ a.context-link
 			font-size: 10px
 			font-family: "RobotoRegular"
 			color: #fff
+			padding-bottom: 2px
+			background: -webkit-linear-gradient(left, $theme-color, $theme-color) no-repeat 50% 100%
+			background: -moz-linear-gradient(left, $theme-color, $theme-color) no-repeat 50% 100%
+			background: -ms-linear-gradient(left, $theme-color, $theme-color) no-repeat 50% 100%
+			background: -o-linear-gradient(left, $theme-color, $theme-color) no-repeat 50% 100%
+			background: linear-gradient(left, $theme-color, $theme-color) no-repeat 50% 100%
+			background-size: 0 1px
+			-webkit-transition: all .15s ease .1s
+			-o-transition: all .15s ease .1s
+			transition: all .15s ease .1s
 			&:hover
-				text-decoration: underline
+				background-size: 100% 1px
 
 .social-row
 	display: -webkit-flex
@@ -1089,6 +1143,14 @@ a.context-link
 	align-items: center
 	a
 		margin-left: 20px
+		-webkit-transition: all .3s ease .1s
+		-o-transition: all .3s ease .1s
+		transition: all .3s ease .1s
+		&:hover
+			-webkit-transform: scale(1.7)
+			-ms-transform: scale(1.7)
+			-o-transform: scale(1.7)
+			transform: scale(1.7)
 
 .footer-middle
 	padding-top: 30px
@@ -1136,5 +1198,132 @@ a.context-link
 		span
 			background-color: $theme-color
 
+.nav-btn
+	position: relative
+	width: 20px
+	height: 14px
+	background: -webkit-linear-gradient(left, #fff, #fff) no-repeat 0 50%
+	background: -moz-linear-gradient(left, #fff, #fff) no-repeat 0 50%
+	background: -ms-linear-gradient(left, #fff, #fff) no-repeat 0 50%
+	background: -o-linear-gradient(left, #fff, #fff) no-repeat 0 50%
+	background: linear-gradient(left, #fff, #fff) no-repeat 0 50%
+	background-size: 12px 2px
+	display: none
+	margin-right: 15px
+	border: none
+	padding: 0
+	-webkit-transition: all .2s ease
+	-o-transition: all .2s ease
+	transition: all .2s ease
+	&:focus
+		outline: none
+	&:before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		display: block
+		width: 20px
+		height: 2px
+		background: #fff
+		-webkit-transition: all .2s ease
+		-o-transition: all .2s ease
+		transition: all .2s ease
+	&:after
+		content: ''
+		position: absolute
+		top: 12px
+		left: 0
+		display: block
+		width: 16px
+		height: 2px
+		background: #fff
+		-webkit-transition: all .2s ease
+		-o-transition: all .2s ease
+		transition: all .2s ease
+
+.nav-btn.active
+	background: none
+	&:before
+		background-color: #000
+		width: 18px
+		height: 2px
+		left: 0
+		top: 50%
+		-webkit-transform: rotate(45deg)
+		-ms-transform: rotate(45deg)
+		-o-transform: rotate(45deg)
+		transform: rotate(45deg)
+	&:after
+		background-color: #000
+		width: 18px
+		height: 2px
+		left: 0
+		top: 50%
+		-webkit-transform: rotate(-45deg)
+		-ms-transform: rotate(-45deg)
+		-o-transform: rotate(-45deg)
+		transform: rotate(-45deg)
+
+.main-header_wrap.mobile-header.scrolled-header 
+	.nav-btn
+		background: -webkit-linear-gradient(left, #000, #000) no-repeat 0 50%
+		background: -moz-linear-gradient(left, #000, #000) no-repeat 0 50%
+		background: -ms-linear-gradient(left, #000, #000) no-repeat 0 50%
+		background: -o-linear-gradient(left, #000, #000) no-repeat 0 50%
+		background: linear-gradient(left, #000, #000) no-repeat 0 50%
+		background-size: 12px 2px
+		&:after
+			background-color: #000
+		&:before
+			background-color: #000
+	.nav-btn.active
+		background: none
+
+.main-btn_hidden
+	display: none
+	margin: 20px 0
+	font-size: 10px
+	line-height: 1
+	padding: 13px 23px
+
+.main-header_wrap.active-header
+	background-color: #fff
+	box-shadow: 0 1px 5px rgba(0,0,0,.07)
+	.logo
+		color: #000
+	.main-nav
+		position: absolute
+		top: 78px
+		left: 0
+		right: 0
+		z-index: 5
+		display: block
+		background-color: #fff
+		ul
+			display: block
+			width: 100%
+			li:not(.main-nav_reg-link)
+				display: block
+				width: 100%
+				position: static
+				background: none
+				margin: 0
+				a
+					color: #000
+					display: block
+					width: 100%
+					padding: 20px 7px
+					border-bottom: 1px solid #e5e5e5
+					position: static
+					background: none
+					text-align: left
+					-webkit-transition: all .15s
+					-o-transition: all .15s
+					transition: all .15s
+					&:hover
+						background-color: rgba(50,174,215,.2)
+					&:after
+						display: none
 
 @import "media" /* Mobile version */
