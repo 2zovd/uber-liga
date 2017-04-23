@@ -63,9 +63,57 @@ body
 	opacity: 1
 	color: $main-text
 
+/* Preloader styles */
+
+.preloader
+	position: fixed
+	top: 0
+	left: 0
+	bottom: 0
+	right: 0
+	background-color: #151515
+	z-index: 100
+@mixin opacity($opacity)
+	opacity: $opacity / 100
+	filter: alpha(opacity=$opacity)
+.pulse
+	position: relative
+	left: 50%
+	top: 50vh
+	margin:
+		left: -40px
+		top: -40px
+	&:before, &:after
+		content: ''
+		border: 5px solid #fff
+		width: 70px
+		height: 70px
+		border-radius: 0
+		position: absolute
+	&:before
+		animation: pulse-outer .8s ease-in infinite
+	&:after
+		animation: pulse-inner .8s linear infinite
+
+@keyframes pulse-outer
+	0%
+		@include opacity(100)
+	50%
+		@include opacity(50)
+	100%
+		@include opacity(0)
+
+@keyframes pulse-inner
+	0%
+		transform: scale(0)
+		@include opacity(0)
+	100%
+		transform: scale(1)
+		@include opacity(100)
+
+
 /* page-top / header styles */
 .page-top
-	min-height: 540px
 	background-image: url('../img/bg-main.jpg')
 	background-repeat: no-repeat
 	background-position: center
@@ -308,8 +356,18 @@ h1
 	.main-btn
 		margin-top: 25px
 		width: 100%
-		background: $theme-color url('../img/arrow.png') no-repeat 80% 50%
-		background-size: 11px 5px
+		position: relative
+		&:after
+			content: ''
+			position: absolute
+			display: block
+			width: 11px
+			height: 5px
+			top: 40%
+			right: 20%
+			background: url('../img/arrow.png') no-repeat 0 0
+			background-size: 100% 100%
+
 	input,
 	select,
 	textarea,
@@ -937,57 +995,146 @@ a.context-link
 	margin-bottom: 25px
 
 .map
+	position: relative
+	&:before
+		content: ''
+		display: block
+		position: absolute
+		top: -11px
+		left: 11px
+		background: url("../img/pattern.svg") repeat 5px 0
+		height: 11px
+		width: 100%
+	&:after
+		content: ''
+		display: block
+		position: absolute
+		top: 0
+		right: -11px
+		background: url("../img/pattern.svg") repeat 5px 0
+		height: 100%
+		width: 12px
 	iframe
 		border: none
 		width: 100%
 		height: 400px
 
-/* Preloader styles */
+.app
+	padding: 50px 0
+	h2
+		margin-bottom: 40px
 
-.preloader
-	position: fixed
-	top: 0
-	left: 0
-	bottom: 0
-	right: 0
-	background-color: #151515
-	z-index: 100
-@mixin opacity($opacity)
-	opacity: $opacity / 100
-	filter: alpha(opacity=$opacity)
-.pulse
-	position: relative
-	left: 50%
-	top: 50vh
-	margin:
-		left: -40px
-		top: -40px
-	&:before, &:after
-		content: ''
-		border: 5px solid #fff
-		width: 70px
-		height: 70px
-		border-radius: 0
-		position: absolute
-	&:before
-		animation: pulse-outer .8s ease-in infinite
-	&:after
-		animation: pulse-inner .8s linear infinite
+.apps-row
+	a
+		display: inline-block
+		margin-right: 20px
+		-webkit-transition: all .15s ease .15s
+		-o-transition: all .15s ease .15s
+		transition: all .15s ease .15s
+		&:hover
+			-webkit-transform: scale(1.1)
+			-ms-transform: scale(1.1)
+			-o-transform: scale(1.1)
+			transform: scale(1.1)
 
-@keyframes pulse-outer
-	0%
-		@include opacity(100)
-	50%
-		@include opacity(50)
-	100%
-		@include opacity(0)
+.main-footer
+	padding: 50px
+	background-color: #000203 
 
-@keyframes pulse-inner
-	0%
-		transform: scale(0)
-		@include opacity(0)
-	100%
-		transform: scale(1)
-		@include opacity(100)
+.footer-top
+	padding-bottom: 30px
+	border-bottom: 1px solid rgba(255,255,255,.2)
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	-webkit-justify-content: space-between
+	-moz-justify-content: space-between
+	-ms-justify-content: space-between
+	-o-justify-content: space-between
+	justify-content: space-between
+	-ms-align-items: center
+	align-items: center
+	-webkit-flex-wrap: wrap
+	-moz-flex-wrap: wrap
+	-ms-flex-wrap: wrap
+	-o-flex-wrap: wrap
+	flex-wrap: wrap
+
+.footer-nav
+	li
+		display: inline-block
+		margin-right: 30px
+		a
+			text-transform: uppercase
+			font-size: 10px
+			font-family: "RobotoRegular"
+			color: #fff
+			&:hover
+				text-decoration: underline
+
+.social-row
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	-webkit-justify-content: space-between
+	-moz-justify-content: space-between
+	-ms-justify-content: space-between
+	-o-justify-content: space-between
+	justify-content: space-between
+	-ms-align-items: center
+	align-items: center
+	a
+		margin-left: 20px
+
+.footer-middle
+	padding-top: 30px
+	padding-bottom: 35px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	-webkit-justify-content: space-between
+	-moz-justify-content: space-between
+	-ms-justify-content: space-between
+	-o-justify-content: space-between
+	justify-content: space-between
+	-ms-align-items: center
+	align-items: center
+	.logo
+		color: #fff
+	p
+		color: #fff
+
+.btn-consult
+	background: $theme-color
+	display: inline-block
+	color: #fff
+	font-size: 10px
+	float: right
+	padding-right: 25px
+	line-height: 37px
+	vertical-align: middle
+	span
+		width: 37px
+		color: #fff
+		display: inline-block
+		text-align: center
+		vertical-align: middle
+		background-color: #1593bd
+		margin-right: 20px
+	strong
+		font-weight: normal
+		display: inline-block
+	&:hover
+		color: #fff
+		background-color: #1593bd
+		span
+			background-color: $theme-color
+
 
 @import "media" /* Mobile version */
