@@ -11,7 +11,9 @@ $(".nav-btn").click(function() {
       $(".nav-btn").toggleClass("active");
       $(".main-header_wrap").toggleClass("active-header");
 });
-
+$(".main-header_wrap .main-nav ul li a, .main-btn").click(function() {
+      $(".main-header_wrap").removeClass("active-header");
+});
 
 /*header on scroll script*/
 $(document).on("scroll", function(){
