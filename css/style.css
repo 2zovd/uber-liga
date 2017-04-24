@@ -84,7 +84,6 @@ a {
 
 a:hover, a:active, a:focus {
   text-decoration: none;
-  color: unset;
 }
 
 html, body {
@@ -985,7 +984,7 @@ a.context-link {
   background: -moz-linear-gradient(left, #ccc, #ccc) no-repeat 50% 100%;
   background: -ms-linear-gradient(left, #ccc, #ccc) no-repeat 50% 100%;
   background: -o-linear-gradient(left, #ccc, #ccc) no-repeat 50% 100%;
-  background: linear-gradient(left, #ccc, #ccc) no-repeat 50% 100%;
+  background: linear-gradient(to right, #ccc, #ccc) no-repeat 50% 100%;
   background-size: 100% 1px;
   -webkit-transition: all .15s ease;
   -o-transition: all .15s ease;
@@ -1431,7 +1430,7 @@ a.context-link:hover {
   background: -moz-linear-gradient(left, #17a4d2, #17a4d2) no-repeat 50% 100%;
   background: -ms-linear-gradient(left, #17a4d2, #17a4d2) no-repeat 50% 100%;
   background: -o-linear-gradient(left, #17a4d2, #17a4d2) no-repeat 50% 100%;
-  background: linear-gradient(left, #17a4d2, #17a4d2) no-repeat 50% 100%;
+  background: linear-gradient(to right, #17a4d2, #17a4d2) no-repeat 50% 100%;
   background-size: 0 1px;
   -webkit-transition: all .15s ease .1s;
   -o-transition: all .15s ease .1s;
@@ -1547,7 +1546,7 @@ a.context-link:hover {
   background: -moz-linear-gradient(left, #fff, #fff) no-repeat 0 50%;
   background: -ms-linear-gradient(left, #fff, #fff) no-repeat 0 50%;
   background: -o-linear-gradient(left, #fff, #fff) no-repeat 0 50%;
-  background: linear-gradient(left, #fff, #fff) no-repeat 0 50%;
+  background: linear-gradient(to right, #fff, #fff) no-repeat 0 50%;
   background-size: 12px 2px;
   display: none;
   margin-right: 15px;
@@ -1627,7 +1626,7 @@ a.context-link:hover {
   background: -moz-linear-gradient(left, #000, #000) no-repeat 0 50%;
   background: -ms-linear-gradient(left, #000, #000) no-repeat 0 50%;
   background: -o-linear-gradient(left, #000, #000) no-repeat 0 50%;
-  background: linear-gradient(left, #000, #000) no-repeat 0 50%;
+  background: linear-gradient(to right, #000, #000) no-repeat 0 50%;
   background-size: 12px 2px;
 }
 
