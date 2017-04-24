@@ -249,6 +249,16 @@
   .slick-arrow {
     top: 17%;
   }
+  .first-link {
+    border-top: 1px solid #e5e5e5;
+  }
+  .main-nav {
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.07);
+  }
+  .main-nav .btn-consult {
+    display: inline-block;
+    margin-left: 15px;
+  }
 }
 
 /* Extra Small Devices, Phones */

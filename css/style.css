@@ -1743,6 +1743,33 @@ a.context-link:hover {
   display: none;
 }
 
+.main-nav .btn-consult {
+  margin: 30px 0;
+  float: none;
+  display: none;
+  background-color: #333535;
+}
+
+.main-nav .btn-consult:hover {
+  background-color: #191b1c;
+}
+
+.main-nav .btn-consult strong {
+  background-color: #333535;
+}
+
+.main-nav .btn-consult strong:hover {
+  background-color: #191b1c;
+}
+
+.main-nav .btn-consult span {
+  background-color: #191b1c;
+}
+
+.main-nav .btn-consult span:hover {
+  background-color: #191b1c;
+}
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
@@ -1993,6 +2020,16 @@ a.context-link:hover {
   }
   .slick-arrow {
     top: 17%;
+  }
+  .first-link {
+    border-top: 1px solid #e5e5e5;
+  }
+  .main-nav {
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.07);
+  }
+  .main-nav .btn-consult {
+    display: inline-block;
+    margin-left: 15px;
   }
 }
 
