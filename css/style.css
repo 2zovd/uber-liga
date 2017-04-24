@@ -702,28 +702,6 @@ h1 {
   position: relative;
 }
 
-.benefits:before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: -11px;
-  left: 13px;
-  background: url("../img/pattern.svg") repeat 5px 0;
-  height: 11px;
-  width: 100%;
-}
-
-.benefits:after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  right: -11px;
-  background: url("../img/pattern.svg") repeat 5px 0;
-  height: 100%;
-  width: 12px;
-}
-
 .benefits .benefits-block {
   padding: 0 30px;
 }
@@ -1371,28 +1349,6 @@ a.context-link:hover {
 
 .map-holder {
   position: relative;
-}
-
-.map-holder:before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: -11px;
-  left: 11px;
-  background: url("../img/pattern.svg") repeat 5px 0;
-  height: 11px;
-  width: 100%;
-}
-
-.map-holder:after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  right: -11px;
-  background: url("../img/pattern.svg") repeat 5px 0;
-  height: 100%;
-  width: 12px;
 }
 
 .map-holder iframe {
