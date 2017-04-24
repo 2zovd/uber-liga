@@ -72,7 +72,7 @@ function initMap() {
 }
 
 /* form validation plug-in */
-$("input, select, textarea").jqBootstrapValidation();
+/*$("input, select, textarea").jqBootstrapValidation();*/
 
 /* animated scroll to section plug-in */
 $(".main-header .logo, .main-footer .logo, .footer-nav ul li a, .main-nav ul li a").mPageScroll2id();
