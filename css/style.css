@@ -1590,11 +1590,15 @@ a.context-link:hover {
   transition: all .2s ease;
 }
 
-.nav-btn.active {
+.main-header_wrap.mobile-header.scrolled-header.active-header .nav-btn {
   background: none;
 }
 
-.nav-btn.active:before {
+.active-header .nav-btn {
+  background: none;
+}
+
+.active-header .nav-btn:before {
   background-color: #000;
   width: 18px;
   height: 2px;
@@ -1606,7 +1610,7 @@ a.context-link:hover {
   transform: rotate(45deg);
 }
 
-.nav-btn.active:after {
+.active-header .nav-btn:after {
   background-color: #000;
   width: 18px;
   height: 2px;
@@ -1633,10 +1637,6 @@ a.context-link:hover {
 
 .main-header_wrap.mobile-header.scrolled-header .nav-btn:before {
   background-color: #000;
-}
-
-.main-header_wrap.mobile-header.scrolled-header .nav-btn.active {
-  background: none;
 }
 
 .main-btn_hidden {
@@ -1754,6 +1754,16 @@ a.context-link:hover {
   .bonus-card {
     margin-bottom: 50px;
   }
+  .page-top_title {
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 50px;
+  }
+  .page-top {
+    background-attachment: scroll;
+    background-position: 50% 0;
+    background-size: auto 65%;
+  }
 }
 
 /* Small Devices, Tablets */
@@ -1793,14 +1803,6 @@ a.context-link:hover {
   .main-header_wrap.second-header {
     display: none;
     position: static;
-  }
-  .page-top_title {
-    text-align: center;
-    padding-top: 100px;
-    margin-bottom: 50px;
-  }
-  .page-top {
-    background-attachment: scroll;
   }
   .benefits-block {
     margin-bottom: 40px;
