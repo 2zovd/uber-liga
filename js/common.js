@@ -78,7 +78,7 @@ function initMap() {
 
 /* animated scroll to section plug-in */
 $(".main-header .logo, .main-footer .logo, .footer-nav ul li a, .main-nav ul li a, .main-btn").mPageScroll2id({
-      offset: 80
+      offset: 60
 });
 
 
