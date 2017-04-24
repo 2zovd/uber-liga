@@ -1649,7 +1649,7 @@ a.context-link:hover {
 
 .main-header_wrap.active-header {
   background-color: #fff;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
 }
 
 .main-header_wrap.active-header .logo {

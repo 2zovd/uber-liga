@@ -32,7 +32,7 @@ $(document).on("scroll", function(){
       }
       else
       {
-            $(".main-header_wrap.mobile-header").removeClass("scrolled-header");
+        $(".main-header_wrap.mobile-header").removeClass("scrolled-header");
       }
 });
 
@@ -75,7 +75,10 @@ function initMap() {
 /*$("input, select, textarea").jqBootstrapValidation();*/
 
 /* animated scroll to section plug-in */
-$(".main-header .logo, .main-footer .logo, .footer-nav ul li a, .main-nav ul li a").mPageScroll2id();
+$(".main-header .logo, .main-footer .logo, .footer-nav ul li a, .main-nav ul li a, .main-btn").mPageScroll2id({
+      offset: 80
+});
+
 
 
 /* selectize script launcher / astyling and import data to select car form*/
