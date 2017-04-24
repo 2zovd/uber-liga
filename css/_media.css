@@ -143,7 +143,7 @@
   .become-driver_box {
     padding-top: 0;
   }
-  .become-driver {
+  .become-driver .heading-group {
     text-align: center;
   }
   .become-driver_box:before {
@@ -242,6 +242,9 @@
   .social-row {
     width: 30%;
     margin: 0 auto;
+  }
+  .social-row a {
+    margin: 0 10px;
   }
   .main-footer {
     padding: 50px 0;
