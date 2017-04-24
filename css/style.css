@@ -696,7 +696,8 @@ h1 {
 
 .benefits {
   background-color: #fff;
-  padding: 70px 0;
+  padding-top: 70px;
+  padding-bottom: 70px;
   text-align: center;
   position: relative;
 }
@@ -789,6 +790,7 @@ h3 {
 
 .about-title {
   margin-bottom: 75px;
+  font-family: "RobotoRegular";
 }
 
 .about-title p {
@@ -1882,6 +1884,7 @@ a.context-link:hover {
   }
   .about-box span {
     margin-right: 10%;
+    margin-bottom: 0;
   }
   .about-wrap {
     background-attachment: scroll;
@@ -2033,6 +2036,9 @@ a.context-link:hover {
   .main-nav .btn-consult {
     display: inline-block;
     margin-left: 15px;
+  }
+  .heading-group h2 {
+    text-align: center;
   }
 }
 

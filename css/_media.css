@@ -263,6 +263,9 @@
     display: inline-block;
     margin-left: 15px;
   }
+  .heading-group h2 {
+    text-align: center;
+  }
 }
 
 /* Extra Small Devices, Phones */
