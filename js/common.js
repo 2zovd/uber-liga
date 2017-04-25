@@ -18,12 +18,12 @@ $(".main-header_wrap .main-nav ul li a, .main-btn").click(function() {
 /*header on scroll script*/
 $(document).on("scroll", function(){
 	if
-    ($(document).scrollTop() > 200){
+    ($(document).scrollTop() > 50){
 	  $(".page-top").addClass("shrink");
 	}
 	else
 	{
-		$(".page-top").removeClass("shrink");
+        $(".page-top").removeClass("shrink");
 	}
 });
 

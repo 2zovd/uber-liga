@@ -247,7 +247,7 @@ body {
   background-color: white;
   color: #000203;
   border-bottom: none;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .main-header_wrap.second-header .logo {
@@ -1688,7 +1688,7 @@ a.context-link:hover {
   }
   .main-header_wrap.scrolled-header {
     background-color: #fff;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.07);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
   }
   .main-header_wrap.scrolled-header .logo {
     color: #000;
@@ -1885,7 +1885,7 @@ a.context-link:hover {
     border-top: 1px solid #e5e5e5;
   }
   .main-nav {
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.07);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   .main-nav .btn-consult {
     display: inline-block;
@@ -1896,7 +1896,6 @@ a.context-link:hover {
   }
   .main-header_wrap.active-header {
     background-color: #fff;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
   }
   .main-header_wrap.active-header .logo {
     color: #000;
@@ -1988,7 +1987,7 @@ a.context-link:hover {
 @media only screen and (max-width: 480px) {
   .apps-row a {
     display: block;
-    width: 40%;
+    width: 50%;
     margin: 0 auto 20px;
   }
   .apps-row a img {
