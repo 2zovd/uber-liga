@@ -350,7 +350,7 @@ body {
   align-items: stretch;
 }
 
-.main-nav ul li {
+.main-nav ul li:not(.unstyled-list) {
   margin-left: 10px;
   display: -webkit-flex;
   display: -moz-flex;
@@ -370,7 +370,7 @@ body {
   align-content: center;
 }
 
-.main-nav ul li a {
+.main-nav ul li:not(.unstyled-list) a {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -400,7 +400,7 @@ body {
   position: relative;
 }
 
-.main-nav ul li a:after {
+.main-nav ul li:not(.unstyled-list) a:after {
   position: absolute;
   content: '';
   display: block;
@@ -419,7 +419,7 @@ body {
   transition: all .15s;
 }
 
-.main-nav ul li a:hover:after {
+.main-nav ul li:not(.unstyled-list) a:hover:after {
   background-size: 70% 100%;
 }
 
@@ -1589,115 +1589,12 @@ a.context-link:hover {
   transition: all .2s ease;
 }
 
-.main-header_wrap.mobile-header.scrolled-header.active-header .nav-btn {
-  background: none;
-}
-
-.active-header .nav-btn {
-  background: none;
-}
-
-.active-header .nav-btn:before {
-  background-color: #000;
-  width: 18px;
-  height: 2px;
-  left: 0;
-  top: 50%;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-.active-header .nav-btn:after {
-  background-color: #000;
-  width: 18px;
-  height: 2px;
-  left: 0;
-  top: 50%;
-  -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
-
-.main-header_wrap.mobile-header.scrolled-header .nav-btn {
-  background: -webkit-linear-gradient(left, #000, #000) no-repeat 0 50%;
-  background: -moz-linear-gradient(left, #000, #000) no-repeat 0 50%;
-  background: -ms-linear-gradient(left, #000, #000) no-repeat 0 50%;
-  background: -o-linear-gradient(left, #000, #000) no-repeat 0 50%;
-  background: linear-gradient(to right, #000, #000) no-repeat 0 50%;
-  background-size: 12px 2px;
-}
-
-.main-header_wrap.mobile-header.scrolled-header .nav-btn:after {
-  background-color: #000;
-}
-
-.main-header_wrap.mobile-header.scrolled-header .nav-btn:before {
-  background-color: #000;
-}
-
 .main-btn_hidden {
   display: none;
   margin: 20px 0;
   font-size: 10px;
   line-height: 1;
   padding: 13px 23px;
-}
-
-.main-header_wrap.active-header {
-  background-color: #fff;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
-}
-
-.main-header_wrap.active-header .logo {
-  color: #000;
-}
-
-.main-header_wrap.active-header .main-nav {
-  position: absolute;
-  top: 78px;
-  left: 0;
-  right: 0;
-  z-index: 5;
-  display: block;
-  background-color: #fff;
-}
-
-.main-header_wrap.active-header .main-nav ul {
-  display: block;
-  width: 100%;
-}
-
-.main-header_wrap.active-header .main-nav ul li:not(.main-nav_reg-link) {
-  display: block;
-  width: 100%;
-  position: static;
-  background: none;
-  margin: 0;
-}
-
-.main-header_wrap.active-header .main-nav ul li:not(.main-nav_reg-link) a {
-  color: #000;
-  display: block;
-  width: 100%;
-  padding: 20px 7px;
-  border-bottom: 1px solid #e5e5e5;
-  position: static;
-  background: none;
-  text-align: left;
-  -webkit-transition: all .15s;
-  -o-transition: all .15s;
-  transition: all .15s;
-}
-
-.main-header_wrap.active-header .main-nav ul li:not(.main-nav_reg-link) a:hover {
-  background-color: rgba(50, 174, 215, 0.2);
-}
-
-.main-header_wrap.active-header .main-nav ul li:not(.main-nav_reg-link) a:after {
-  display: none;
 }
 
 .main-nav .btn-consult {
@@ -1996,6 +1893,94 @@ a.context-link:hover {
   }
   .heading-group h2 {
     text-align: center;
+  }
+  .main-header_wrap.active-header {
+    background-color: #fff;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+  }
+  .main-header_wrap.active-header .logo {
+    color: #000;
+  }
+  .main-header_wrap.active-header .main-nav {
+    position: absolute;
+    top: 78px;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    display: block;
+    background-color: #fff;
+  }
+  .main-header_wrap.active-header .main-nav ul {
+    display: block;
+    width: 100%;
+  }
+  .main-header_wrap.active-header .main-nav ul li:not(.unstyled-list) {
+    display: block;
+    width: 100%;
+    position: static;
+    background: none;
+    margin: 0;
+  }
+  .main-header_wrap.active-header .main-nav ul li:not(.unstyled-list) a {
+    color: #000;
+    display: block;
+    width: 100%;
+    padding: 20px 7px;
+    border-bottom: 1px solid #e5e5e5;
+    position: static;
+    background: none;
+    text-align: left;
+    -webkit-transition: all .15s;
+    -o-transition: all .15s;
+    transition: all .15s;
+  }
+  .main-header_wrap.active-header .main-nav ul li:not(.unstyled-list) a:hover {
+    background-color: rgba(50, 174, 215, 0.2);
+  }
+  .main-header_wrap.active-header .main-nav ul li:not(.unstyled-list) a:after {
+    display: none;
+  }
+  .main-header_wrap.mobile-header.scrolled-header.active-header .nav-btn {
+    background: none;
+  }
+  .active-header .nav-btn {
+    background: none;
+  }
+  .active-header .nav-btn:before {
+    background-color: #000;
+    width: 18px;
+    height: 2px;
+    left: 0;
+    top: 50%;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .active-header .nav-btn:after {
+    background-color: #000;
+    width: 18px;
+    height: 2px;
+    left: 0;
+    top: 50%;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  .main-header_wrap.mobile-header.scrolled-header .nav-btn {
+    background: -webkit-linear-gradient(left, #000, #000) no-repeat 0 50%;
+    background: -moz-linear-gradient(left, #000, #000) no-repeat 0 50%;
+    background: -ms-linear-gradient(left, #000, #000) no-repeat 0 50%;
+    background: -o-linear-gradient(left, #000, #000) no-repeat 0 50%;
+    background: linear-gradient(to right, #000, #000) no-repeat 0 50%;
+    background-size: 12px 2px;
+  }
+  .main-header_wrap.mobile-header.scrolled-header .nav-btn:after {
+    background-color: #000;
+  }
+  .main-header_wrap.mobile-header.scrolled-header .nav-btn:before {
+    background-color: #000;
   }
 }
 
