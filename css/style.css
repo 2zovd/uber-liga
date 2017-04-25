@@ -1236,7 +1236,7 @@ a.context-link:hover {
 }
 
 .review-slide_holder.last-slide:after {
-  right: 20%;
+  right: 10%;
 }
 
 .slick-prev.slick-arrow.slick-disabled,
