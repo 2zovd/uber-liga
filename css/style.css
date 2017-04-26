@@ -232,7 +232,7 @@ body {
 
 .main-header_wrap {
   width: 100%;
-  z-index: 10;
+  z-index: 150;
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
   -webkit-transition: all .5s ease;
   -o-transition: all .5s ease;
@@ -515,11 +515,6 @@ h1 {
   transition: all 1s;
 }
 
-.page-top_form.form-active input#name {
-  box-shadow: 0 0 3px #1593bd;
-  border: 1px solid transparent;
-}
-
 .formhead {
   padding: 5px 0 5px 40px;
   background: url("../img/ico-form.png") no-repeat 0 50%;
@@ -679,7 +674,7 @@ h1 {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  z-index: 1;
+  z-index: 100;
 }
 
 .success ~ * {

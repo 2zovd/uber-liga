@@ -43,23 +43,6 @@ jQuery(function($){
    $("#phone").mask("+38 (999) 999-99-99");
 });
 
-//E-mail Ajax Send
-$("form.callback").submit(function() {
-	var th = $(this);
-	$.ajax({
-		type: "POST",
-		url: "mail.php", //Change
-		data: th.serialize()
-	}).done(function() {
-		$(th).find('.success').addClass('active').css("display", "flex").hide().fadeIn();
-		setTimeout(function() {
-			$(th).find('.success').removeClass('active').fadeOut();
-			th.trigger("reset");
-		}, 3000);
-	});
-	return false;
-});
-
 /* google maps api launcher */
 function initMap() {
   var uberliga = {lat: 49.9801184, lng: 36.2619713};
@@ -77,16 +60,19 @@ function initMap() {
 /*$("input, select, textarea").jqBootstrapValidation();*/
 
 /* animated scroll to section plug-in */
-$(".main-header .logo, .main-footer .logo, .footer-nav ul li a, .main-nav ul li a, .main-btn").mPageScroll2id({
+
+
+
+$(".main-header .logo, .main-footer .logo, .footer-nav ul li a, .main-nav ul li a, .btn-become").mPageScroll2id({
       offset: 60
 });
 
-
 $('.btn-become').click(function() {
-      $(".page-top_form").addClass('form-active').stop().delay(3000).queue(function(){
+      $(".page-top_form").addClass('form-active').stop().delay(2000).queue(function(){
         $(this).removeClass('form-active');
+        $('#name').delay(1500).focus();
       });
-      $('#name').focus();
+      
 });
 
 /* selectize script launcher / astyling and import data to select car form*/
@@ -927,8 +913,24 @@ $('select').selectize({
   }
 });
 
-/* preloader function */
+//E-mail Ajax Send
+$("form.callback").submit(function() {
+      var th = $(this);
+      $.ajax({
+            type: "POST",
+            url: "mail.php", //Change
+            data: th.serialize()
+      }).done(function() {
+            $(th).find('.success').addClass('active').css("display", "flex").hide().fadeIn();
+            setTimeout(function() {
+                  $(th).find('.success').removeClass('active').fadeOut();
+                  th.trigger("reset");
+            }, 5000);
+      });
+      return false;
+});
 
+/* preloader function */
 $(window).on('load', function() {
 	$('.preloader').delay(1000).fadeOut('slow');
 });
