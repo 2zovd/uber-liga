@@ -82,7 +82,7 @@ $(".main-header .logo, .main-footer .logo, .footer-nav ul li a, .main-nav ul li 
 });
 
 
-$('.main-btn').click(function() {
+$('.btn-become').click(function() {
       $(".page-top_form").addClass('form-active').stop().delay(3000).queue(function(){
         $(this).removeClass('form-active');
       });  
