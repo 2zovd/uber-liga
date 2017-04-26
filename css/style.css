@@ -510,6 +510,15 @@ h1 {
 
 .page-top_form {
   background-color: #fff;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  margin-bottom: 3px;
+  border-radius: 2px;
+}
+
+.page-top_form.form-active {
+  box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.5);
 }
 
 .formhead {
@@ -762,6 +771,10 @@ h3 {
   background: url("../img/dropdown.svg") no-repeat 100% 50%;
   width: 9px;
   height: 5px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .selectize-control.single .selectize-input:after {
@@ -2028,6 +2041,9 @@ a.context-link:hover {
   }
   .benefits-wrap {
     padding: 0;
+  }
+  .contact {
+    padding-top: 0;
   }
 }
 
