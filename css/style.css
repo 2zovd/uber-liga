@@ -2032,6 +2032,12 @@ a.context-link:hover {
     padding: 20px;
     margin-bottom: 20px;
   }
+  .loyalty-hold {
+    padding-bottom: 35px;
+  }
+  .review-wrap {
+    padding-bottom: 0;
+  }
 }
 
 /* Custom, iPhone Retina */
