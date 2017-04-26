@@ -518,7 +518,7 @@ h1 {
   line-height: 35px;
   border: 1px solid #cccccd;
   border-radius: 0;
-  padding: 0 15px;
+  padding: 0 0 0 13px;
   -webkit-transition: all .15s;
   -o-transition: all .15s;
   transition: all .15s;
@@ -699,10 +699,6 @@ h1 {
   padding-bottom: 70px;
   text-align: center;
   position: relative;
-}
-
-.benefits .benefits-block {
-  padding: 0 30px;
 }
 
 .benefits .benefits-block img {
@@ -1043,8 +1039,14 @@ a.context-link:hover {
   flex-direction: row;
 }
 
-.vantage-box img {
-  margin-right: 30px;
+.vantage-img {
+  margin-right: 35px;
+}
+
+.vantage-img img {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
 }
 
 .loyalty-hold {
@@ -1703,9 +1705,12 @@ a.context-link:hover {
   .benefits-block {
     margin-bottom: 40px;
   }
-  h2 {
-    font-size: 36px;
-    line-height: 38px;
+  h2,
+  .initial-demands_block h2,
+  .heading-group h2 {
+    text-align: center;
+    font-size: 30px;
+    line-height: 32px;
   }
   .about-title strong {
     font-size: 14px;
@@ -1750,7 +1755,7 @@ a.context-link:hover {
     text-align: center;
   }
   .initial-demands_block h2 {
-    text-align: center;
+    margin-bottom: 35px;
   }
   .initial-demands_block .marked-heading {
     display: inline-block;
@@ -1821,9 +1826,6 @@ a.context-link:hover {
   .car-req {
     text-align: center;
   }
-  .car-req h2 {
-    text-align: center;
-  }
   .car-req .marked-heading {
     display: inline-block;
   }
@@ -1841,16 +1843,10 @@ a.context-link:hover {
     text-align: center;
     padding: 15px;
   }
-  .driver-req_box h2 {
-    text-align: center;
-  }
   .driver-req_box .marked-heading {
     text-align: left;
   }
   .app {
-    text-align: center;
-  }
-  .app h2 {
     text-align: center;
   }
   .apps-row {
@@ -1890,9 +1886,6 @@ a.context-link:hover {
   .main-nav .btn-consult {
     display: inline-block;
     margin-left: 15px;
-  }
-  .heading-group h2 {
-    text-align: center;
   }
   .main-header_wrap.active-header {
     background-color: #fff;
@@ -1981,6 +1974,15 @@ a.context-link:hover {
   .main-header_wrap.mobile-header.scrolled-header .nav-btn:before {
     background-color: #000;
   }
+  .about-wrap {
+    padding-bottom: 30px;
+  }
+  .paragraph-box p {
+    padding: 0 15%;
+  }
+  .benefits-wrap {
+    padding: 0;
+  }
 }
 
 /* Extra Small Devices, Phones */
@@ -1997,11 +1999,56 @@ a.context-link:hover {
   .review-slide .review-img {
     width: 50%;
   }
+  .callback {
+    padding: 40px 30px;
+  }
+  .benefits .benefits-block p {
+    padding: 0;
+  }
+  .about-box {
+    padding: 27px 25px;
+  }
+  .about-box span {
+    min-width: 30%;
+    margin-right: 8%;
+    font-size: 18px;
+    line-height: 29px;
+  }
+  .about-box span strong {
+    font-size: 36px;
+    line-height: 38px;
+  }
+  .about-box p {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .paragraph-box p {
+    padding: 0 10%;
+  }
+  .become-driver_hold {
+    margin-bottom: 0;
+  }
+  .vantage-box {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width: 320px) {
-  /**/
+@media only screen and (max-width: 350px) {
+  .form-row.floated-form {
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+  }
+  .form-row.floated-form input {
+    width: 100%;
+  }
+  .about-box span {
+    min-width: 34%;
+  }
 }
 
 /*==========  Mobile First  ==========*/
@@ -2028,4 +2075,23 @@ a.context-link:hover {
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
   /**/
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1500px) {
+  .slick-next.slick-arrow {
+    right: 13%;
+  }
+  .slick-prev.slick-arrow {
+    left: 13%;
+  }
+}
+
+@media only screen and (min-width: 1900px) {
+  .slick-next.slick-arrow {
+    right: 15%;
+  }
+  .slick-prev.slick-arrow {
+    left: 15%;
+  }
 }

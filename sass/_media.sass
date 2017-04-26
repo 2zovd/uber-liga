@@ -65,9 +65,14 @@
 
 	.benefits-block
 		margin-bottom: 40px
-	h2
-		font-size: 36px
-		line-height: 38px
+
+	h2,
+	.initial-demands_block h2,
+	.heading-group h2
+		text-align: center
+		font-size: 30px
+		line-height: 32px
+
 	.about-title strong
 		font-size: 14px
 	.about-box
@@ -101,7 +106,7 @@
 	.initial-demands_block
 		text-align: center
 		h2
-			text-align: center
+			margin-bottom: 35px
 		.marked-heading
 			display: inline-block
 
@@ -161,8 +166,6 @@
 		right: 0
 	.car-req
 		text-align: center
-		h2
-			text-align: center
 		.marked-heading
 			display: inline-block
 	.car-req_content
@@ -178,14 +181,10 @@
 	.driver-req_box
 		text-align: center
 		padding: 15px
-		h2
-			text-align: center
 		.marked-heading
 			text-align: left
 	.app
 		text-align: center
-		h2
-			text-align: center
 
 	.apps-row
 		text-align: center
@@ -215,9 +214,6 @@
 		.btn-consult
 			display: inline-block
 			margin-left: 15px
-	.heading-group
-		h2
-			text-align: center
 
 	.main-header_wrap.active-header
 		background-color: #fff
@@ -297,7 +293,12 @@
 				background-color: #000
 			&:before
 				background-color: #000
-
+	.about-wrap
+		padding-bottom: 30px
+	.paragraph-box p
+		padding: 0 15%
+	.benefits-wrap
+		padding: 0
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
@@ -312,10 +313,46 @@
 	.review-slide
 		.review-img
 			width: 50%
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
-	/**/
+	.callback
+		padding: 40px 30px
 
+	.benefits .benefits-block p
+		padding: 0
+
+	.about-box
+		padding: 27px 25px
+	.about-box span
+		min-width: 30%
+		margin-right: 8%
+		font-size: 18px
+		line-height: 29px
+	.about-box span strong
+		font-size: 36px
+		line-height: 38px
+	.about-box p
+		font-size: 12px
+		line-height: 14px
+
+	.paragraph-box p
+		padding: 0 10%
+	.become-driver_hold
+		margin-bottom: 0
+
+	.vantage-box
+		padding: 20px
+		margin-bottom: 20px
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 350px)
+	.form-row.floated-form
+		-webkit-flex-direction: column
+		-moz-flex-direction: column
+		-ms-flex-direction: column
+		-o-flex-direction: column
+		flex-direction: column
+	.form-row.floated-form input
+		width: 100%
+	.about-box span
+		min-width: 34%
 /*==========  Mobile First  ==========*/
 
 /* Custom, iPhone Retina */
@@ -342,3 +379,15 @@
 @media only screen and (min-width : 1200px)
 	/**/
 
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1500px)
+	.slick-next.slick-arrow
+		right: 13%
+	.slick-prev.slick-arrow
+		left: 13%
+
+@media only screen and (min-width : 1900px)
+	.slick-next.slick-arrow
+		right: 15%
+	.slick-prev.slick-arrow
+		left: 15%
