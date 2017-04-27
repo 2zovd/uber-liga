@@ -459,7 +459,7 @@ h1
 .success
 	display: none
 	position: absolute
-	background: rgba(0,0,0,.7)
+	background: rgba(0,0,0,.8)
 	top: 0
 	left: 0
 	right: 0
@@ -475,6 +475,10 @@ h1
 	-ms-align-items: center
 	align-items: center
 	z-index: 100
+	font-size: 15px
+	line-height: 25px
+	strong
+		display: block
 	& ~ *
 		-webkit-transition: all .5s ease
 		-o-transition: all .5s ease
@@ -906,8 +910,9 @@ a.context-link
 		height: auto
 
 .review-text
-	width: 75%
-	padding-right: 20%
+	width: 100%
+	padding-right: 0
+	text-align: justify
 	display: -webkit-flex
 	display: -moz-flex
 	display: -ms-flex

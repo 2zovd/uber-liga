@@ -46,11 +46,11 @@
 									<li><a href="#about">Про UBER</a></li>
 									<li><a href="#reviews">Отзывы</a></li>
 									<li><a href="#contact">Контакты</a></li>
-									<li class="unstyled-list"><a href="#" class="btn-consult"><span>?</span><strong>Получить консультацию</strong></a></li>
-									<li class="main-nav_reg-link unstyled-list"><a class="main-btn btn-become" href="#become-driver">Стать водителем</a></li>
+									<li class="unstyled-list"><a href="#" onclick="jivo_api.open();" class="btn-consult"><span>?</span><strong>Получить консультацию</strong></a></li>
+									<li class="main-nav_reg-link unstyled-list"><a class="main-btn btn-become" href="#driver-form">Стать водителем</a></li>
 								</ul>
 							</nav>
-							<a class="main-btn main-btn_hidden btn-become" href="#become-driver">Стать водителем</a>
+							<a class="main-btn main-btn_hidden btn-become" href="#driver-form">Стать водителем</a>
 
 						</header>
 					</div>
@@ -70,7 +70,7 @@
 									<li><a href="#about">Про UBER</a></li>
 									<li><a href="#reviews">Отзывы</a></li>
 									<li><a href="#contact">Контакты</a></li>
-									<li class="main-nav_reg-link"><a class="main-btn btn-become" href="#become-driver">Стать водителем</a></li>
+									<li class="main-nav_reg-link"><a class="main-btn btn-become" href="#driver-form">Стать водителем</a></li>
 								</ul>
 							</nav>
 						</header>
@@ -85,18 +85,18 @@
 				<div class="col-md-6 page-top_title">
 					<h1>Станьте водителем Uber в Харькове</h1>
 					<p>Легко и просто зарабатывайте на своем авто до 40 000 грн/месяц в свободное время с Uber Liga, официальным партнёром Uber в Украине.</p>
-					<a href="#become-driver" class="main-btn main-btn-small btn-become">Стать водителем</a>
+					<a href="#driver-form" class="main-btn main-btn-small btn-become">Стать водителем</a>
 				</div>
 					
 				<div class="col-md-4 col-md-offset-2">
 					<div class="page-top_form">
-						<form class="callback" id="become-driver">
+						<form class="callback" name="driver-form" id="driver-form">
 
-							<div class="success"><span>Спасибо, Ваша заявка принята.</span></div>
+							<div class="success"><span><strong>Спасибо!</strong> Ваша заявка принята.</span></div>
 
 							<!-- Hidden Required Fields -->
 							<input type="hidden" name="project_name" value="UBER LIGA">
-							<input type="hidden" name="admin_email" value="dmy2zov@gmail.com">
+							<input type="hidden" name="admin_email" value="info@uberliga.com.ua">
 							<input type="hidden" name="form_subject" value="Регистрация водителя на сайте">
 							<!-- END Hidden Required Fields -->
 	
@@ -116,14 +116,14 @@
 								<input type="email" name="E-mail" placeholder="E-mail" tabindex="4">
 							</div>
 							<div class="form-row form-select">
-								<select id="select-car" name="Марка автомобиля" tabindex="5" required>
-									<option disabled selected value>Автомобиль</option>
-									<option>Марка автомобиля</option>
+								<select id="select-car" name="Марка авто" tabindex="5">
+									<option disabled selected value>Автомобиль  </option>
+									<option>Марка автомобиля  </option>
 								</select>
-								<input type="text" name="Год выпуска" placeholder="Год выпуска" tabindex="6" required>
+								<input type="text" name="Год выпуска авто" placeholder="Год выпуска" tabindex="6">
 							</div>
 
-							<button class="main-btn main-btn-small" tabindex="7">Зарегистрироваться</button>
+							<button type="submit" class="main-btn main-btn-small" tabindex="7">Зарегистрироваться</button>
 
 						</form>
 					</div>
@@ -141,7 +141,7 @@
 					<div class="col-md-4 col-sm-4 col-xs-12 benefits-block">
 						<img src="img/high-income.svg" width="72" height="72" alt="Высокий доход">
 						<h3>Высокий доход</h3>
-						<p>Месячный доход водителей UBER до 50 000 грн. Гарантированная выплата на банковскую карту четко в срок.</p>
+						<p>Месячный доход водителей UBER до 40 000 грн. Гарантированная выплата на банковскую карту четко в срок.</p>
 					</div>
 					<div class="col-md-4 col-sm-4 col-xs-12 benefits-block">
 						<img src="img/free-schedule.svg" width="72" height="72" alt="Свободный график">
@@ -209,15 +209,15 @@
 						<h2>Что нужно, чтобы начать</h2>
 						<div class="paragraph-box">
 							<h4 class="marked-heading">Автомобиль</h4>
-							<p>Подойдёт как свой так и арендованный. Требования к автомобилю можно посмотреть <a href="#" class="context-link">здесь</a>.</p>
+							<p>Подойдёт как свой так и арендованный. Автомобиль должен быть в хорошем и исправном состоянии с ремнями безопасности для четырех пассажиров.Требования к автомобилю можно посмотреть  <a href="#car-req" class="context-link">здесь</a>.</p>
 						</div>
 						<div class="paragraph-box">
 							<h4 class="marked-heading">Смартфон или планшет</h4>
-							<p>Любой смартфон или планшет с подключением к интернету и установленным <a href="#" class="context-link">приложением Uber.</a></p>
+							<p>Любой смартфон или планшет с подключением к интернету и установленным <a href="#app" class="context-link">приложением Uber.</a></p>
 						</div>
 						<div class="paragraph-box">
 							<h4 class="marked-heading">Страховка ОСАГО</h4>
-							<p>Прочитать про формление страхового полиса ОСАГО можно <a href="#" class="context-link">здесь</a>.</p>
+							<p>У Вас должен быть действующий страховой полис ОСАГО.</p>
 						</div>
 					</div>
 				</div>	
@@ -238,7 +238,7 @@
 					<div class="row">
 						<div class="col-md-3 col-sm-3 become-driver_box">
 							<h4>Оставить заявку</h4>
-							<p>Заполните форму на этом сайте или позвоните нам сами. Мы можем перезвонить Вам в удобное время - жмите <a href="#" class="context-link">сюда</a>.</p>
+							<p>Заполните форму на этом сайте или позвоните нам сами. Мы можем перезвонить Вам в удобное время - жмите <a href="#driver-form" class="context-link">сюда</a>.</p>
 						</div>
 						<div class="col-md-3 col-sm-3 col-md-offset-1 col-sm-offset-1 become-driver_box become-driver_second">
 							<h4>Пройти инструктаж</h4>
@@ -421,7 +421,7 @@
 			</div>
 		</section>
 
-		<section class="car-req">
+		<section class="car-req" id="car-req">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-11 col-md-offset-1 heading-group">
@@ -441,7 +441,7 @@
 								<h4 class="marked-heading">UberX</h4>
 								<p>Авто эконом и стандарт класса от 2001 года выпуска четырех- или пяти- дверной модификации, чистая и без наклеек, рекламы или шашечек такси.</p>
 								<p>Примеры авто: Daweoo Lanos, Chevrolet Lacetti, Hyundai Accent и другие авто этого класса.</p>
-								<p><a class="context-link" href="#">Полный список допустимых авто.</a></p>
+								<p><a class="context-link" target="_blank" href="https://docs.google.com/spreadsheets/d/1XDzUIVBZxCrNIKkjFOc0eiKHNRLmPDaVJKzKcb1lu0E/edit#gid=0">Полный список допустимых авто.</a></p>
 							</div>
 						</div>
 					</div>
@@ -457,7 +457,7 @@
 								<h4 class="marked-heading">UberSelect</h4>
 								<p>Автомобиль иномарка комфорт и бизнес класса от 2005 года выпуска четырех- или пяти- дверная без наклеек, рекламы или шашечек такси.</p>
 								<p>Примеры авто: Toyota Camry, Skoda Superb, VW Passat, Mazda 6, Honda Accord и другие авто этого класса.</p>
-								<p><a class="context-link" href="#">Полный список допустимых авто.</a></p>
+								<p><a class="context-link" target="_blank" href="https://docs.google.com/spreadsheets/d/1XDzUIVBZxCrNIKkjFOc0eiKHNRLmPDaVJKzKcb1lu0E/edit#gid=0">Полный список допустимых авто.</a></p>
 							</div>
 						</div>
 					</div>
@@ -465,7 +465,7 @@
 			</div>
 		</section>
 
-		<section class="driver-req">
+		<section class="driver-req" id="driver-req">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 col-sm-12 col-xs-12">
@@ -480,12 +480,12 @@
 								<div class="col-md-12 col-sm-12 col-xs-12">
 									<ul>
 										<li class="marked-heading">C личным или арендованным авто</li>
-										<li class="marked-heading">Водительский стаж от 3х лет</li>
+										<li class="marked-heading">Водительский стаж от 1-го года</li>
 										<li class="marked-heading">Гражданин Украины или вид на жительство</li>
 										<li class="marked-heading">Действующая страховка ОСАГО (автогражданка) на авто</li>
 										<li class="marked-heading">Наличие мобильного телефона-смартфона или планшета с 3G мобильным интернетом</li>
 									</ul>
-									<a href="#become-driver" class="main-btn main-btn-small btn-become">Стать водителем</a>
+									<a href="#driver-form" class="main-btn main-btn-small btn-become">Стать водителем</a>
 								</div>
 							</div>
 						</div>
@@ -536,7 +536,7 @@
 			</div>
 		</div>
 
-		<section class="app">
+		<section class="app" id="app">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 heading-group">
@@ -572,7 +572,7 @@
 							<li><a href="#about">Про UBER</a></li>
 							<li><a href="#reviews">Отзывы</a></li>
 							<li><a href="#contact">Контакты</a></li>
-							<li><a href="#become-driver" class="btn-become">Стать водителем</a></li>
+							<li><a href="#driver-form" class="btn-become">Стать водителем</a></li>
 						</ul>
 					</nav>
 
@@ -592,18 +592,24 @@
 			</div>
 			<div class="row">
 				<div class="col-md-12 footer-bottom">
-					<a href="#" class="btn-consult"><span>?</span><strong>Получить консультацию</strong></a>
+					<a href="#" onclick="jivo_api.open();" class="btn-consult"><span>?</span><strong>Получить консультацию</strong></a>
 				</div>
 			</div>
 		</div>
 	</footer>
 
 	<script src="libs/jquery/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/webshim/1.16.0/dev/polyfiller.js"></script>
 	<script src="libs/selectize/js/standalone/selectize.min.js"></script>
 	<script src="libs/masked-input/masked-input.js"></script>
 	<script src="libs/slick/slick.min.js"></script>
 	<script src="libs/scroll2id/PageScroll2id.min.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4A8ptoTbkgcOm7bR4Ji_aZXmmggmF0m8&callback=initMap"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4A8ptoTbkgcOm7bR4Ji_aZXmmggmF0m8&callback=initMap"></script>
+	<!-- BEGIN JIVOSITE CODE {literal} -->
+	<script type='text/javascript'>
+	(function(){ var widget_id = 'A9c6EtYylY';var d=document;var w=window;function l(){
+	var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
+	<!-- {/literal} END JIVOSITE CODE -->
 	<script src="js/common.js"></script>
 
 </body>
