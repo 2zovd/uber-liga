@@ -1,5 +1,4 @@
-$(function() {
-
+$( document ).ready(function() {
       /* slick slider plug-in launcher */
       $(document).ready(function(){
         $('.review-slider').slick({
@@ -17,51 +16,15 @@ $(function() {
             $(".main-header_wrap").removeClass("active-header");
       });
 
-      /*header on scroll script*/
-      $(document).on("scroll", function(){
-            if
-          ($(document).scrollTop() > 50){
-              $(".page-top").addClass("shrink");
-            }
-            else
-            {
-              $(".page-top").removeClass("shrink");
-            }
-      });
-
-      $(document).on("scroll", function(){
-            if
-          ($(document).scrollTop() > 5){
-              $(".main-header_wrap.mobile-header").addClass("scrolled-header");
-            }
-            else
-            {
-              $(".main-header_wrap.mobile-header").removeClass("scrolled-header");
-            }
-      });
-
       /* adding mask +38 to tel input */
       jQuery(function($){
          $("#phone").mask("+38 (999) 999-99-99");
       });
 
-      /* google maps api launcher */
-      function initMap() {
-        var uberliga = {lat: 49.9801184, lng: 36.2619713};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 16,
-          center: uberliga
-        });
-        var marker = new google.maps.Marker({
-          position: uberliga,
-          map: map
-        });
-      }
-
       /* animated scroll to section plug-in */
 
       $(".main-header .logo, .main-footer .logo, .footer-nav ul li a, .main-nav ul li a, .btn-become, .context-link").mPageScroll2id({
-            offset: 60
+            offset: 59
       });
 
       $('.btn-become').click(function() {
@@ -910,8 +873,6 @@ $(function() {
         }
       });
 
-
-      
       //Safari form validation fix
       $.webshims.setOptions({ 
           waitReady: false
@@ -921,6 +882,7 @@ $(function() {
             webshims.polyfill('forms');
             webshims.cfg.no$Switch = true;
       });
+
       //E-mail Ajax Send
       $("#driver-form").submit(function() {
             var th = $(this);
@@ -938,29 +900,47 @@ $(function() {
             return false;
       });
 
-
+      //jivosite
+      (function(){ var widget_id = 'A9c6EtYylY';var d=document;var w=window;function l(){
+      var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
 
 });
 
-/*
-function hasHtml5Validation () {
-  return typeof document.createElement('input').checkValidity === 'function';
-}
-
-if (hasHtml5Validation()) {
-  $('.validate-form').submit(function (e) {
-    if (!this.checkValidity()) {
-      e.preventDefault();
-      $(this).addClass('invalid');
-      $('#status').html('invalid');
-    } else {
-      $(this).removeClass('invalid');
-      $('#status').html('submitted');
-    }
+/* google maps api launcher */
+function initMap() {
+  var uberliga = {lat: 49.9801184, lng: 36.2619713};
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 16,
+    center: uberliga
+  });
+  var marker = new google.maps.Marker({
+    position: uberliga,
+    map: map
   });
 }
 
-*/
+/*header on scroll script*/
+$(document).on("scroll", function(){
+      if
+    ($(document).scrollTop() > 50){
+        $(".page-top").addClass("shrink");
+      }
+      else
+      {
+        $(".page-top").removeClass("shrink");
+      }
+});
+
+$(document).on("scroll", function(){
+      if
+    ($(document).scrollTop() > 5){
+        $(".main-header_wrap.mobile-header").addClass("scrolled-header");
+      }
+      else
+      {
+        $(".main-header_wrap.mobile-header").removeClass("scrolled-header");
+      }
+});
 
 /* preloader function */
 $(window).on('load', function() {

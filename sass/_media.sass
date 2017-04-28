@@ -10,6 +10,14 @@
 		left: 0
 	.slick-next.slick-arrow
 		right: 0
+	.page-top
+		background-attachment: scroll
+	.driver-req
+		background-attachment: scroll
+		background-size: contain
+	.about-wrap
+		background-attachment: scroll
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	.initial-demands_block
@@ -30,6 +38,14 @@
 		background-attachment: scroll
 		background-position: 50% 0;
 		background-size: auto 65%;
+
+	.about-box
+		min-height: auto
+		height: 230px
+
+@media only screen and (max-width : 830px)
+	.app
+		background: none
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
@@ -80,6 +96,8 @@
 	.about-title strong
 		font-size: 14px
 	.about-box
+		min-height: auto
+		height: auto
 		display: -webkit-flex
 		display: -moz-flex
 		display: -ms-flex
@@ -103,8 +121,7 @@
 		span
 			margin-right: 10%
 			margin-bottom: 0
-	.about-wrap
-		background-attachment: scroll
+
 	.initial-demands_img
 		display: none
 	.initial-demands_block
@@ -302,6 +319,9 @@
 	.contact
 		padding-top: 40px
 
+	.review-wrap
+		padding-bottom: 0
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	.apps-row
@@ -346,9 +366,6 @@
 
 	.loyalty-hold
     padding-bottom: 35px
-
-	.review-wrap
-		padding-bottom: 0
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 350px)

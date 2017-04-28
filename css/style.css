@@ -2,28 +2,28 @@
   font-family: "RobotoBold";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
+  src: local("RobotoBold"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "RobotoLight";
   font-style: normal;
   font-weight: normal;
-  src: url("../fonts/RobotoLight/RobotoLight.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoLight/RobotoLight.woff") format("woff"), url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype");
+  src: local("RobotoLight"), url("../fonts/RobotoLight/RobotoLight.woff") format("woff"), url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "RobotoRegular";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+  src: local("RobotoRegular"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "RobotoMedium";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/RobotoMedium/RobotoMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoMedium/RobotoMedium.woff") format("woff"), url("../fonts/RobotoMedium/RobotoMedium.ttf") format("truetype");
+  src: local("RobotoMedium"), url("../fonts/RobotoMedium/RobotoMedium.woff") format("woff"), url("../fonts/RobotoMedium/RobotoMedium.ttf") format("truetype");
 }
 
 *::-webkit-input-placeholder {
@@ -736,6 +736,7 @@ h1 {
 
 .benefits .benefits-block p {
   font-size: 13px;
+  line-height: 1.4;
   display: block;
   padding: 0 15%;
 }
@@ -744,7 +745,7 @@ h3 {
   font-family: "RobotoRegular";
   font-size: 15px;
   display: block;
-  margin-bottom: 7px;
+  margin-bottom: 10px;
 }
 
 .benefits-block img {
@@ -925,7 +926,7 @@ h2 {
 }
 
 .initial-demands_block {
-  margin-top: 70px;
+  margin-top: 50px;
 }
 
 .initial-demands_block h2 {
@@ -939,7 +940,7 @@ h2 {
 .paragraph-box p {
   display: block;
   font-size: 13px;
-  line-height: 14px;
+  line-height: 1.4;
   padding-left: 25px;
 }
 
@@ -979,8 +980,13 @@ h4 {
 .become-driver_box {
   padding-top: 30px;
   position: relative;
-  color: #000203;
   margin-bottom: 50px;
+}
+
+.become-driver_box p {
+  color: #000203;
+  font-size: 13px;
+  line-height: 1.4;
 }
 
 .become-driver_box:before {
@@ -1002,6 +1008,12 @@ h4 {
 
 .become-driver_box.become-driver_third:before {
   background-color: #17a4d2;
+}
+
+.vantage-box_text p {
+  color: #000203;
+  font-size: 13px;
+  line-height: 1.4;
 }
 
 a.context-link {
@@ -1077,8 +1089,8 @@ a.context-link:hover {
 
 .vantage-img img {
   display: inline-block;
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
 }
 
 .loyalty-hold {
@@ -1324,6 +1336,8 @@ a.context-link:hover {
 }
 
 .car-req_block p {
+  font-size: 13px;
+  line-height: 1.4;
   margin-bottom: 20px;
   padding-left: 25px;
 }
@@ -1352,7 +1366,7 @@ a.context-link:hover {
 }
 
 .contact {
-  padding: 70px 0 100px;
+  padding: 70px 0 40px;
   background-color: #fafafa;
 }
 
@@ -1423,7 +1437,10 @@ a.context-link:hover {
 }
 
 .app {
-  padding: 50px 0;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  background: url("../img/phone-2.png") no-repeat 100% 100%;
+  background-size: auto;
 }
 
 .app h2 {
@@ -1697,6 +1714,16 @@ a.context-link:hover {
   .slick-next.slick-arrow {
     right: 0;
   }
+  .page-top {
+    background-attachment: scroll;
+  }
+  .driver-req {
+    background-attachment: scroll;
+    background-size: contain;
+  }
+  .about-wrap {
+    background-attachment: scroll;
+  }
 }
 
 /* Medium Devices, Desktops */
@@ -1720,6 +1747,16 @@ a.context-link:hover {
     background-attachment: scroll;
     background-position: 50% 0;
     background-size: auto 65%;
+  }
+  .about-box {
+    min-height: auto;
+    height: 230px;
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  .app {
+    background: none;
   }
 }
 
@@ -1780,6 +1817,8 @@ a.context-link:hover {
     font-size: 14px;
   }
   .about-box {
+    min-height: auto;
+    height: auto;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -1808,9 +1847,6 @@ a.context-link:hover {
   .about-box span {
     margin-right: 10%;
     margin-bottom: 0;
-  }
-  .about-wrap {
-    background-attachment: scroll;
   }
   .initial-demands_img {
     display: none;
@@ -2046,6 +2082,9 @@ a.context-link:hover {
   .contact {
     padding-top: 40px;
   }
+  .review-wrap {
+    padding-bottom: 0;
+  }
 }
 
 /* Extra Small Devices, Phones */
@@ -2097,9 +2136,6 @@ a.context-link:hover {
   }
   .loyalty-hold {
     padding-bottom: 35px;
-  }
-  .review-wrap {
-    padding-bottom: 0;
   }
 }
 

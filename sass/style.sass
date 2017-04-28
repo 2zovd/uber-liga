@@ -1,5 +1,4 @@
 @import "fonts"
-@import "libs"
 @import "vars"
 
 *::-webkit-input-placeholder
@@ -521,6 +520,7 @@ h1
 			margin: 0 auto 25px
 		p
 			font-size: $text-size
+			line-height: 1.4
 			display: block
 			padding: 0 15%
 
@@ -528,7 +528,7 @@ h3
 	font-family: "RobotoRegular"
 	font-size: $heading-size
 	display: block
-	margin-bottom: 7px
+	margin-bottom: 10px
 
 .benefits-block
 	img
@@ -679,7 +679,7 @@ h2
 		margin: 0 auto
 
 .initial-demands_block
-	margin-top: 70px
+	margin-top: 50px
 	h2
 		text-align: left
 
@@ -688,7 +688,7 @@ h2
 	p
 		display: block
 		font-size: $text-size
-		line-height: 14px
+		line-height: 1.4
 		padding-left: 25px
 
 h4
@@ -723,8 +723,11 @@ h4
 .become-driver_box
 	padding-top: 30px
 	position: relative
-	color: $main-text
 	margin-bottom: 50px
+	p
+		color: $main-text
+		font-size: $text-size
+		line-height: 1.4
 	&:before
 		position: absolute
 		top: -10px
@@ -744,6 +747,12 @@ h4
 .become-driver_box.become-driver_third
 	&:before
 		background-color: $theme-color
+
+.vantage-box_text
+	p
+		color: $main-text
+		font-size: $text-size
+		line-height: 1.4
 
 a.context-link
 	display: inline-block
@@ -806,8 +815,8 @@ a.context-link
 	margin-right: 35px
 	img
 		display: inline-block
-		width: 40px
-		height: 40px
+		width: 45px
+		height: 45px
 
 
 .loyalty-hold
@@ -1005,6 +1014,8 @@ a.context-link
 		height: auto
 		margin: 0 auto 40px
 	p
+		font-size: $text-size
+		line-height: 1.4
 		margin-bottom: 20px
 		padding-left: 25px
 
@@ -1027,7 +1038,7 @@ a.context-link
 		font-weight: normal
 
 .contact
-	padding: 70px 0 100px
+	padding: 70px 0 40px
 	background-color: $bg-section
 
 .contact-title
@@ -1087,7 +1098,10 @@ a.context-link
 	height: 400px
 
 .app
-	padding: 50px 0
+	padding-top: 100px
+	padding-bottom: 50px
+	background: url('../img/phone-2.png') no-repeat 100% 100%
+	background-size: auto
 	h2
 		margin-bottom: 40px
 
