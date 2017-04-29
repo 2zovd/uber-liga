@@ -62,6 +62,54 @@ body
 	opacity: 1
 	color: $main-text
 
+/* Preloader styles */
+
+.preloader
+	position: fixed
+	top: 0
+	left: 0
+	bottom: 0
+	right: 0
+	background-color: #151515
+	z-index: 1000
+@mixin opacity($opacity)
+	opacity: $opacity / 100
+	filter: alpha(opacity=$opacity)
+.pulse
+	position: relative
+	left: 50%
+	top: 50vh
+	margin:
+		left: -40px
+		top: -40px
+	&:before, &:after
+		content: ''
+		border: 5px solid #fff
+		width: 70px
+		height: 70px
+		border-radius: 0
+		position: absolute
+	&:before
+		animation: pulse-outer .8s ease-in infinite
+	&:after
+		animation: pulse-inner .8s linear infinite
+
+@keyframes pulse-outer
+	0%
+		@include opacity(100)
+	50%
+		@include opacity(50)
+	100%
+		@include opacity(0)
+
+@keyframes pulse-inner
+	0%
+		transform: scale(0)
+		@include opacity(0)
+	100%
+		transform: scale(1)
+		@include opacity(100)
+		
 /* page-top / header styles */
 .page-top
 	background-image: url('../img/bg-main.jpg')
@@ -1259,50 +1307,3 @@ a.context-link
 @import "media"
 
 
-/* Preloader styles */
-
-// .preloader
-// 	position: fixed
-// 	top: 0
-// 	left: 0
-// 	bottom: 0
-// 	right: 0
-// 	background-color: #151515
-// 	z-index: 1000
-// @mixin opacity($opacity)
-// 	opacity: $opacity / 100
-// 	filter: alpha(opacity=$opacity)
-// .pulse
-// 	position: relative
-// 	left: 50%
-// 	top: 50vh
-// 	margin:
-// 		left: -40px
-// 		top: -40px
-// 	&:before, &:after
-// 		content: ''
-// 		border: 5px solid #fff
-// 		width: 70px
-// 		height: 70px
-// 		border-radius: 0
-// 		position: absolute
-// 	&:before
-// 		animation: pulse-outer .8s ease-in infinite
-// 	&:after
-// 		animation: pulse-inner .8s linear infinite
-
-// @keyframes pulse-outer
-// 	0%
-// 		@include opacity(100)
-// 	50%
-// 		@include opacity(50)
-// 	100%
-// 		@include opacity(0)
-
-// @keyframes pulse-inner
-// 	0%
-// 		transform: scale(0)
-// 		@include opacity(0)
-// 	100%
-// 		transform: scale(1)
-// 		@include opacity(100)
