@@ -1366,7 +1366,7 @@ a.context-link:hover {
 }
 
 .contact {
-  padding: 70px 0 40px;
+  padding: 70px 0 100px;
   background-color: #fafafa;
 }
 
@@ -1441,6 +1441,7 @@ a.context-link:hover {
   padding-bottom: 50px;
   background: url("../img/phone-2.png") no-repeat 100% 100%;
   background-size: auto;
+  margin-top: -50px;
 }
 
 .app h2 {
@@ -1757,6 +1758,7 @@ a.context-link:hover {
 @media only screen and (max-width: 830px) {
   .app {
     background: none;
+    margin-top: 0;
   }
 }
 
