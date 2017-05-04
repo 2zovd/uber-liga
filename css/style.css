@@ -346,7 +346,7 @@ body {
   color: #fff;
   text-transform: uppercase;
   padding: 0 15px;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 1;
   text-align: center;
   position: relative;
@@ -443,7 +443,7 @@ body {
 }
 
 .main-nav ul li.main-nav_reg-link .main-btn {
-  padding: 13px 22px;
+  padding: 11px 21px;
 }
 
 .main-nav ul li.main-nav_reg-link .main-btn:after {
@@ -502,7 +502,7 @@ h1 {
 }
 
 .main-btn.main-btn-small {
-  font-size: 10px;
+  font-size: 11px;
   line-height: 37px;
   padding: 0 23px;
   margin: 20px 0 0 0;
@@ -516,20 +516,20 @@ h1 {
 }
 
 .formhead {
-  padding: 7px 0 5px 40px;
+  padding: 7px 0 5px 45px;
   background: url("../img/ico-form.png") no-repeat 0 50%;
-  font-family: "RobotoBold";
+  font-family: "RobotoMedium";
   margin-bottom: 30px;
   text-align: left;
   text-transform: uppercase;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 18px;
+  line-height: 20px;
 }
 
 .callback {
   text-align: center;
   position: relative;
-  padding: 50px 40px;
+  padding: 40px 40px 50px;
 }
 
 .callback input,
@@ -615,7 +615,7 @@ h1 {
 .callback textarea:focus,
 .callback .selectize-control .selectize-input:focus,
 .callback .selectize-control.single .selectize-input.input-active:focus {
-  border: 1px solid rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(23, 164, 210, 0.7);
   outline: none;
 }
 
@@ -830,7 +830,7 @@ h2 {
   background-color: rgba(255, 255, 255, 0.95);
   padding: 40px 20%;
   margin-bottom: 100px;
-  min-height: 240px;
+  min-height: 250px;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -868,7 +868,7 @@ h2 {
 .about-box p {
   font-family: "RobotoLight";
   font-size: 13px;
-  line-height: 13px;
+  line-height: 16px;
 }
 
 .sup-heading {
