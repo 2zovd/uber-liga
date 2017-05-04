@@ -24,7 +24,7 @@ $( document ).ready(function() {
       /* animated scroll to section plug-in */
 
       $(".main-header .logo, .main-footer .logo, .footer-nav ul li a, .main-nav ul li a, .btn-become, .context-link").mPageScroll2id({
-            offset: 58
+            offset: 57
       });
 
       $('.btn-become').click(function() {
