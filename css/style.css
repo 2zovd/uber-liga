@@ -2165,7 +2165,7 @@ a.context-link:hover {
   }
   .main-header_wrap.active-header .main-nav {
     position: absolute;
-    top: 74px;
+    top: 64px;
     left: 0;
     right: 0;
     z-index: 5;
