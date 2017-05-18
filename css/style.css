@@ -863,7 +863,6 @@ h3 {
 
 .about-title {
   margin-bottom: 75px;
-  font-family: "RobotoRegular";
 }
 
 .about-title p {
@@ -873,7 +872,9 @@ h3 {
 
 .about-title strong {
   font-size: 13px;
+  line-height: 23px;
   color: #fff;
+  font-family: "RobotoRegular";
 }
 
 h2 {
@@ -1047,7 +1048,7 @@ h4 {
   font-family: "RobotoRegular";
   margin-bottom: 12px;
   font-size: 15px;
-  line-height: 17px;
+  line-height: 1.4;
   position: relative;
 }
 
@@ -1374,7 +1375,7 @@ a.context-link:hover {
 .review-text p {
   font-family: "RobotoLight";
   font-size: 13px;
-  line-height: 1.4;
+  line-height: 1.6;
 }
 
 .review-text span {
@@ -1971,6 +1972,7 @@ a.context-link:hover {
   }
   .about-title strong {
     font-size: 14px;
+    line-height: 25px;
   }
   .about-col {
     margin-bottom: 25px;
@@ -2271,6 +2273,9 @@ a.context-link:hover {
   .paragraph-box .partner-content-hold p {
     padding: 0;
   }
+  .callback .main-btn:after {
+    right: 20px;
+  }
 }
 
 /* Extra Small Devices, Phones */
@@ -2327,11 +2332,11 @@ a.context-link:hover {
     height: 25px;
   }
   .header-middle span {
-    margin: 0 5px;
+    margin: 0 4px;
     display: block;
     color: #c6c6c6;
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 11px;
+    line-height: 13px;
     font-family: "RobotoRegular";
   }
   .header-middle i {
