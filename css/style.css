@@ -1200,13 +1200,9 @@ a.context-link:hover {
   margin-bottom: 45px;
 }
 
-.partner-logo {
-  width: 90px;
-}
-
 .partner-logo img {
   display: inline-block;
-  width: 100%;
+  width: 50px;
   height: auto;
 }
 
