@@ -203,8 +203,8 @@ body {
 .page-top {
   background-image: url("../img/bg-main.jpg");
   background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
+  background-position: center center;
+  background-attachment: scroll;
   background-size: cover;
   -webkit-transition: all .7s ease;
   -o-transition: all .7s ease;
@@ -220,6 +220,13 @@ body {
   -webkit-transition: all .15s ease .2s;
   -o-transition: all .15s ease .2s;
   transition: all .15s ease .2s;
+  width: 160px;
+  height: 22px;
+  font-size: 0;
+  text-indent: -99999;
+  background: url("../img/logo-sprite.png") no-repeat 0 0;
+  background-size: 100% auto;
+  background-position: 0 0;
 }
 
 .logo:hover {
@@ -237,6 +244,10 @@ body {
   -webkit-transition: all .5s ease;
   -o-transition: all .5s ease;
   transition: all .5s ease;
+}
+
+.main-header_wrap.second-header .main-header .logo {
+  background-position: 0 -22px;
 }
 
 .main-header_wrap.second-header {
@@ -284,7 +295,7 @@ body {
 }
 
 .header-middle_wrap {
-  background: rgba(0, 0, 0, 0.55);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 }
 
 .header-middle {
@@ -309,14 +320,14 @@ body {
 .header-middle span {
   margin: 0 15px;
   display: block;
-  color: #c6c6c6;
-  font-size: 13px;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 14px;
   line-height: 15px;
   font-family: "RobotoRegular";
 }
 
 .header-middle i {
-  color: #c6c6c6;
+  color: #17a4d2;
   margin-right: 10px;
   font-size: 14px;
 }
@@ -515,7 +526,7 @@ body {
 }
 
 .page-top_content {
-  padding-top: 45px;
+  padding-top: 75px;
 }
 
 h1 {
@@ -529,12 +540,12 @@ h1 {
 
 .page-top_title {
   color: #fff;
-  padding-top: 55px;
+  padding-top: 25px;
 }
 
 .page-top_title p {
   font-size: 16px;
-  line-height: 21px;
+  line-height: 25px;
   margin-bottom: 30px;
   display: block;
 }
@@ -554,20 +565,36 @@ h1 {
 }
 
 .formhead {
-  padding: 7px 0 5px 45px;
-  background: url("../img/ico-form.png") no-repeat 0 50%;
+  display: block;
+  text-align: center;
+  padding: 7px 0 15px 0;
+  /* background: url('../img/ico-form.png') no-repeat 0 50% */
   font-family: "RobotoMedium";
   margin-bottom: 30px;
-  text-align: left;
   text-transform: uppercase;
   font-size: 18px;
   line-height: 20px;
+  position: relative;
+}
+
+.formhead:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 100%;
+  height: 2px;
+  background: #17a4d2;
 }
 
 .callback {
   text-align: center;
   position: relative;
-  padding: 40px 40px 50px;
+  padding: 40px 40px 65px;
 }
 
 .callback input,
@@ -577,14 +604,14 @@ h1 {
 .callback .selectize-control.single .selectize-input.input-active {
   display: inline-block;
   font-size: 13px;
-  line-height: 35px;
+  line-height: 40px;
   border: 1px solid #cccccd;
   border-radius: 0;
   padding: 0 0 0 13px;
   -webkit-transition: all .15s;
   -o-transition: all .15s;
   transition: all .15s;
-  margin-bottom: 13px;
+  margin-bottom: 16px;
   width: 100%;
   box-shadow: none;
 }
@@ -678,7 +705,7 @@ h1 {
 }
 
 .form-select .selectize-control {
-  width: 58%;
+  width: 57%;
 }
 
 .form-select input {
@@ -863,12 +890,34 @@ h2 {
   color: #fff;
 }
 
+.about-row {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-align-items: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.about-col {
+  margin-bottom: 50px;
+}
+
 .about-box {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.95);
   padding: 40px 20%;
-  margin-bottom: 100px;
-  min-height: 250px;
+  height: 100%;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -1139,6 +1188,45 @@ a.context-link:hover {
 
 .loyalty-hold h2 {
   margin-bottom: 45px;
+}
+
+.partner-logo {
+  width: 90px;
+}
+
+.partner-logo img {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
+
+.okko-subhead {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.partner-content-hold {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  -ms-justify-content: flex-start;
+  -o-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-align-items: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 25px;
+}
+
+.paragraph-box .partner-content-hold p {
+  padding-left: 15px;
 }
 
 .bonus-card {
@@ -1746,9 +1834,6 @@ a.context-link:hover {
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
-  .about-box {
-    min-height: 260px;
-  }
   .slick-prev.slick-arrow {
     left: 0;
   }
@@ -1789,9 +1874,32 @@ a.context-link:hover {
     background-position: 50% 0;
     background-size: auto 65%;
   }
-  .about-box {
-    min-height: auto;
-    height: 230px;
+  .callback {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    margin-bottom: 5px;
+  }
+  .formhead {
+    margin-bottom: 50px;
+  }
+  .partner-content-hold {
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: flex-start;
+    -moz-justify-content: flex-start;
+    -ms-justify-content: flex-start;
+    -o-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-align-items: flex-start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+  .partner-logo {
+    margin: 15px 0;
   }
 }
 
@@ -1804,6 +1912,12 @@ a.context-link:hover {
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+  .scrolled-header .logo {
+    background-position: 0 -22px;
+  }
+  .scrolled-header .header-middle_wrap {
+    display: none;
+  }
   .review-text {
     width: 80%;
     padding: 0;
@@ -1858,6 +1972,9 @@ a.context-link:hover {
   .about-title strong {
     font-size: 14px;
   }
+  .about-col {
+    margin-bottom: 25px;
+  }
   .about-box {
     min-height: auto;
     height: auto;
@@ -1884,7 +2001,6 @@ a.context-link:hover {
     align-items: center;
     min-height: auto;
     padding: 35px 10%;
-    margin-bottom: 20px;
   }
   .about-box span {
     margin-right: 10%;
@@ -2029,11 +2145,11 @@ a.context-link:hover {
     background-color: #fff;
   }
   .main-header_wrap.active-header .logo {
-    color: #000;
+    background-position: 0 -22px;
   }
   .main-header_wrap.active-header .main-nav {
     position: absolute;
-    top: 78px;
+    top: 74px;
     left: 0;
     right: 0;
     z-index: 5;
@@ -2135,6 +2251,26 @@ a.context-link:hover {
     -ms-flex-pack: center;
     justify-content: center;
   }
+  .partner-content-hold {
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-align-items: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .paragraph-box .partner-content-hold p {
+    padding: 0;
+  }
 }
 
 /* Extra Small Devices, Phones */
@@ -2171,8 +2307,8 @@ a.context-link:hover {
     line-height: 38px;
   }
   .about-box p {
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 13px;
+    line-height: 17px;
   }
   .paragraph-box p {
     padding: 0 10%;
@@ -2199,9 +2335,17 @@ a.context-link:hover {
     font-family: "RobotoRegular";
   }
   .header-middle i {
-    color: #c6c6c6;
     margin-right: 5px;
     font-size: 12px;
+  }
+  .main-header {
+    padding: 20px 0;
+  }
+  .main-header .main-btn_hidden {
+    display: none;
+  }
+  .header-middle {
+    height: 40px;
   }
 }
 
