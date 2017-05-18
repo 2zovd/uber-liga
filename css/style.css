@@ -319,12 +319,11 @@ body {
 
 .header-middle span {
   display: inline-block;
+  margin: 0 15px;
 }
 
 .header-middle span a {
   display: inline-block;
-  margin: 0 15px;
-  display: block;
   color: rgba(255, 255, 255, 0.85);
   font-size: 14px;
   line-height: 15px;
@@ -338,7 +337,7 @@ body {
 .header-middle i {
   display: inline-block;
   color: #17a4d2;
-  margin-right: 10px;
+  margin: 0 10px;
   font-size: 14px;
 }
 
@@ -2345,8 +2344,10 @@ a.context-link:hover {
   .header-middle {
     height: 25px;
   }
-  .header-middle span a {
+  .header-middle span {
     margin: 0 5px;
+  }
+  .header-middle span a {
     display: inline-block;
     color: #c6c6c6;
     font-size: 11px;
@@ -2354,7 +2355,7 @@ a.context-link:hover {
     font-family: "RobotoRegular";
   }
   .header-middle i {
-    margin-right: 0;
+    margin: 0 4px 0 0;
     font-size: 12px;
   }
   .main-header {
