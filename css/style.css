@@ -314,7 +314,7 @@ body {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 25px;
+  height: 30px;
 }
 
 .header-middle span {
@@ -324,14 +324,14 @@ body {
 
 .header-middle span a {
   display: inline-block;
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(255, 255, 255, 0.95);
   font-size: 14px;
   line-height: 15px;
   font-family: "RobotoRegular";
 }
 
 .header-middle span a:hover {
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(255, 255, 255, 0.95);
 }
 
 .header-middle i {
@@ -339,6 +339,18 @@ body {
   color: #17a4d2;
   margin: 0 10px;
   font-size: 14px;
+}
+
+.main-header_wrap.mobile-header.active-header .header-middle span a {
+  color: #000;
+}
+
+.main-header_wrap.mobile-header.active-header .header-middle span a:hover {
+  color: #000;
+}
+
+.main-header_wrap.mobile-header.active-header .header-middle_wrap {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
 }
 
 .page-top.shrink .main-header_wrap.second-header {
@@ -1507,7 +1519,8 @@ a.context-link:hover {
 .contact-title {
   display: block;
   font-family: "RobotoRegular";
-  font-size: 10px;
+  font-size: 12px;
+  line-height: 15px;
   margin-bottom: 14px;
   color: #666768;
   text-transform: uppercase;
@@ -1543,8 +1556,15 @@ a.context-link:hover {
   line-height: 1.3;
 }
 
-.contact-info a {
+.contact-info {
   display: block;
+  color: #000203;
+  font-family: "RobotoBold";
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.contact-info a {
   color: #000203;
   font-family: "RobotoBold";
   font-size: 16px;
@@ -1602,7 +1622,7 @@ a.context-link:hover {
 }
 
 .main-footer {
-  padding: 50px;
+  padding: 50px 0;
   background-color: #000203;
 }
 
@@ -2285,6 +2305,9 @@ a.context-link:hover {
   .callback .main-btn:after {
     right: 20px;
   }
+  .phone-section {
+    margin-bottom: 15px;
+  }
 }
 
 /* Extra Small Devices, Phones */
@@ -2349,6 +2372,9 @@ a.context-link:hover {
     font-size: 11px;
     line-height: 13px;
     font-family: "RobotoRegular";
+  }
+  .header-middle span a:hover {
+    color: #c6c6c6;
   }
   .header-middle i {
     margin: 0 4px 0 0;
