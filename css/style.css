@@ -1392,7 +1392,7 @@ a.context-link:hover {
 .review-text p {
   font-family: "RobotoLight";
   font-size: 13px;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 .review-text span {
@@ -1659,7 +1659,8 @@ a.context-link:hover {
 
 .footer-nav li a {
   text-transform: uppercase;
-  font-size: 10px;
+  font-size: 12px;
+  line-height: 14px;
   font-family: "RobotoRegular";
   color: #fff;
   padding-bottom: 2px;
